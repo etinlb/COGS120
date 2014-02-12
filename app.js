@@ -52,6 +52,7 @@ app.get('/log_in', log_in.view);
 app.get('/notifications', notifications.view);
 app.get('/profile', profile.view);
 app.get('/settings', settings.view);
+app.get('/add', create_profile.add);
 
 // Example route
 // app.get('/users', user.list);

@@ -25,20 +25,20 @@
 </head>
 <body>
   <div class="w-form">
-    <form class="w-clearfix" name="email-form" data-name="Email Form">
-      <label class="create_labels" for="name">Skills</label>
-      <input class="w-input create_text" type="text" placeholder="Enter skills" name="name" data-name="Name"></input>
-      <label class="create_labels" for="email">Interests</label>
-      <input class="w-input create_text" type="email" placeholder="Enter interests" name="email" data-name="Email" required="required"></input>
+    <form class="w-clearfix" name="email-form" data-name="Email Form" method="get" action="/add">
+      <label class="create_labels" for="skills">Skills</label>
+      <input class="w-input create_text" type="text" placeholder="Enter skills" name="skills" data-name="skills"></input>
+      <label class="create_labels" for="interests">Interests</label>
+      <input class="w-input create_text" type="text" placeholder="Enter interests" name="interests" data-name="interests"></input>
       <label class="create_labels">Profession / Field</label>
-      <select class="w-select create_text" name="dropdown" required="required" data-name="Drop Down">
+      <select class="w-select create_text" name="profession" required="required" data-name="profession">
         <option value="Art">Art/Fine Arts</option>
         <option value="First">Information Technology</option>
         <option value="Second">Biology</option>
         <option value="Third">Structural Engineering</option>
       </select>
       <label class="create_labels">Years of Experience</label>
-      <select class="w-select create_text" name="dropdown">
+      <select class="w-select create_text" name="years_experience">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
