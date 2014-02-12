@@ -4,7 +4,7 @@
 <html data-wf-site="52f19a02ba63705c45000010">
 <head>
   <meta charset="utf-8">
-  <title>Job Hunt - Sign-in</title>
+  <title>Job Hunt - Notifications</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/webflow.css">
@@ -24,20 +24,21 @@
   <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
 </head>
 <body>
-  <div class="w-clearfix login_header">
-    <h1>JobHunt</h1>
-  </div>
-  <div class="login_section">
-    <div class="w-form">
-      <form class="signin_form" name="email-form" data-name="Email Form"><a class="button" href="log_in">SIGN IN</a>
-      </form>
-      <div class="w-form-done">
-        <p>Thank you! Your submission has been received!</p>
+  <section class="w-container heading">
+    <div class="maintext"><strong>NOTIFICATIONS</strong>
+    </div>
+  </section>
+  <div class="w-nav navbar" data-collapse="all" data-animation="default" data-duration="500" data-contain="1">
+    <div class="w-container">
+      <a class="w-nav-brand" href="home">
+        <img src="images/home_icon.png" width="50" height="50" alt="52f3e7855d8eed2b6b0013e3_home_icon.png">
+      </a>
+      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link" href="home">Home</a><a class="w-nav-link" href="profile">Profile</a><a class="w-nav-link" href="settings.html">Settings</a>
+      </nav>
+      <div class="w-nav-button">
+        <div class="w-icon-nav-menu"></div>
       </div>
-      <div class="w-form-fail">
-        <p>Oops! Something went wrong while submitting the form :(</p>
-      </div>
-    </div><a class="button" href="create_profile">SIGN UP</a>
+    </div>
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
