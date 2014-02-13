@@ -1,21 +1,22 @@
 
 {
-  "profiles": [
-    { "name": "erik",
-      "email": "eparreir@ucsd.edu",
-      "password": "12345",
-      "password2": "12345",
-      "phone": "(555)-123-1233",
-      "street": "1024 Jackson",
-      "state": "California",
-      "zip": "93635",
-      "commute_dist": "1-10",
-      "relocate_dist": "1-10",
-      "skills": "Fighting Children",
-      "interests": "Woman but I'm taken",
-      "profession": "Senior Chancellor of Micro Gravity Moonshoe development",
-      "commute_dist": "1-10",
-      "relocate_dist": "1-10"
-    }
-  ]
+  "profiles": {    
+      "eparreir@ucsd.edu":
+      { "name": "erik",
+        "email": "eparreir@ucsd.edu",
+        "password": "12345",
+        "password2": "12345",
+        "phone": "(555)-123-1233",
+        "street": "1024 Jackson",
+        "state": "California",
+        "zip": "93635",
+        "commute_dist": "1-10",
+        "relocate_dist": "1-10",
+        "skills": "Fighting Children",
+        "interests": "Woman but I'm taken",
+        "profession": "Senior Chancellor of Micro Gravity Moonshoe development",
+        "commute_dist": "1-10",
+        "relocate_dist": "1-10"
+      }
+    } 
 }

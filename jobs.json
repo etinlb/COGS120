@@ -1,0 +1,24 @@
+
+{
+  "jobs": [
+    { "title": "Senior Analyst",
+      "where": "Lehman Brothers"
+    },
+    { "title": "Junior Analyst",
+      "where": "Manlee Brothers"    
+    },
+    { "title": "Master of Coin",
+      "where": "Lanister Incorporated "     
+    },
+    { "title": "Kings Slayer",
+      "where": "Lanister Incorporated"     
+    },
+    { "title": "Obliviator",
+      "where": "Ministery of Magic"    
+    },
+    { "title": "Death Eater",
+      "where": "You Know Who"    
+    }
+
+  ]
+}

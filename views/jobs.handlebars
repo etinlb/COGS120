@@ -41,15 +41,17 @@
   <div class="w-container jobs_container">
     <h3>JOBS</h3>
   </div>
+  {{#each jobs}}
   <div class="w-row">
     <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
-      <div class="job_title">Senior Analyst</div>
+      <div class="job_title">{{title}}</div>
     </div>
     <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
-      <div class="job_company"><strong>Lehman Brothers</strong>
+      <div class="job_company"><strong>{{where}}</strong>
       </div>
     </div>
   </div>
+  {{/each}}
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
 </body>
