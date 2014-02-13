@@ -8,6 +8,7 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
+//Route to the js files
 var index = require('./routes/index');
 var create_profile = require('./routes/create_profile');
 var log_in = require('./routes/log_in');
@@ -41,17 +42,17 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-// Add routes here
+// URLS that we can use in our html
 app.get('/', index.view);
-// app.get('/project', project.viewProject);
-// app.get('/project/:name', project.viewProject);
-app.get('/create_profile', create_profile.page1);
-app.get('/create_profile_2', create_profile.page2);
+app.get('/create_profile', create_profile.hunter_page1);
+app.get('/create_profile_2', create_profile.hunter_page2);
 app.get('/home', home.view);
 app.get('/log_in', log_in.view);
 app.get('/notifications', notifications.view);
 app.get('/profile', profile.view);
 app.get('/settings', settings.view);
+app.get('/add', create_profile.add);
+app.get('/proc_log_in', log_in.log_user_in);
 
 // Example route
 // app.get('/users', user.list);
