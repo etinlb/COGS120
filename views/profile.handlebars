@@ -6,24 +6,38 @@
   <meta charset="utf-8">
   <title>Job Hunt - Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
-  <!-- <link rel="stylesheet" type="text/css" href="css/webflow.css"> -->
-  <!-- <link rel="stylesheet" type="text/css" href="css/job-hunt.webflow.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/job-hunt.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Oswald:300,400,700","Open Sans:300,400,600,700,800"]
+      }
+    });
+  </script>
+  <script>
+    if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
+  </script>
   <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
   <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
 </head>
 <body>
+  <div class="w-container">
+    <div class="w-clearfix">
+      <img class="userimage" src="images/user_icon.jpg" height="179" alt="52f2df37593f6edf41000431_user_icon.jpg">
+    </div>
   </div>
   <section class="w-container heading">
-    <div class="profile_name"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Joe Shmoe</strong>
+    <div class="profile_name"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{name}}</strong>
     </div><a class="button profile_button" href="create_profile_ii">Edit</a>
   </section>
   <h5>Resume</h5>
   <h5>Skills</h5>
+  <p> {{skills}}</p>
   <h5>Interests</h5>
+  <p> {{interests}}</p>
   <div class="profile_nav"></div>
   <div class="w-nav" data-collapse="all" data-animation="default" data-duration="500" data-contain="1">
     <div class="w-container">
@@ -34,28 +48,10 @@
       </nav>
       <div class="w-nav-button">
         <div class="w-icon-nav-menu"></div>
-    <section class="container heading">
-      <div class="profile_name"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{name}}</strong>
-      </div><a class="button profile_button" href="create_profile_ii">Edit</a>
-    </section>
-    <h5>Resume</h5>
-    <h5>Skills</h5>
-    <p> {{skills}}</p>
-    <h5>Interests</h5>
-    <p> {{interests}}</p>
-    <div class="profile_nav"></div>
-    <div class="nav" data-collapse="all" data-animation="default" data-duration="500" data-contain="1">
-      <div class="container">
-        <a class="nav-brand" href="home">
-          <img class="home_image" src="images/home_icon.png" width="50" height="50" alt="52f3e7855d8eed2b6b0013e3_home_icon.png">
-        </a>
       </div>
     </div>
   </div>
-
-
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <!-- // <script type="text/javascript" src="js/webflow.js"></script> -->
-  <script src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
 </body>
 </html>
