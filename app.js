@@ -51,7 +51,7 @@ app.get('/create_profile', create_profile.hunter_page1);
 app.get('/home/:user', home.view);
 app.get('/log_in', log_in.view);
 app.get('/authenticate', log_in.authenticate);
-app.get('/profile', profile.view);
+app.get('/profile/:user', profile.view);
 app.get('/add', create_profile.add);
 app.get('/choose_profile', choose_profile.view);
 app.get('/employer_create', employer_create.page1);
