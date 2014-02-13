@@ -13,9 +13,11 @@ var index = require('./routes/index');
 var create_profile = require('./routes/create_profile');
 var log_in = require('./routes/log_in');
 var home = require('./routes/home');
-var notifications = require('./routes/notifications');
 var profile = require('./routes/profile');
-var settings = require('./routes/settings');
+var choose_profile = require('./routes/choose_profile');
+var employer_create = require('./routes/employer_create');
+var employer_profile = require('./routes/employer_profile');
+var employer_home = require('./routes/employer_home');
 
 // Example route
 // var user = require('./routes/user');
@@ -48,11 +50,18 @@ app.get('/create_profile', create_profile.hunter_page1);
 app.get('/create_profile_2', create_profile.hunter_page2);
 app.get('/home', home.view);
 app.get('/log_in', log_in.view);
-app.get('/notifications', notifications.view);
 app.get('/profile', profile.view);
-app.get('/settings', settings.view);
 app.get('/add', create_profile.add);
 app.get('/proc_log_in', log_in.log_user_in);
+app.get('/choose_profile', choose_profile.view);
+app.get('/employer_create', employer_create.page1);
+app.get('/employer_create_ii', employer_create.page2);
+app.get('/employer_profile', employer_profile.view);
+app.get('/employer_home', employer_home.view);
+
+
+
+
 
 // Example route
 // app.get('/users', user.list);

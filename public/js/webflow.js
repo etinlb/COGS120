@@ -1857,6 +1857,8 @@ Webflow.define('navbar', function ($, _) {
 
       // Close when navigating to an in-page anchor
       if (href && href.indexOf('#') === 0 && data.open) {
+        // Avoid empty hash links
+        if (href.length === 1) evt.preventDefault();
         close(data);
       }
     };
@@ -1865,9 +1867,10 @@ Webflow.define('navbar', function ($, _) {
   function outside(data) {
     return function (evt) {
       var target = evt.target;
-      // Close navbars when tapped outside
-      var isOutside = !data.el.has(target).length && !data.el.is(target);
-      if (isOutside || /close/i.test(evt.target.className)) close(data);
+      // Close navbars when clicked outside
+      if (!data.el.has(target).length && !data.el.is(target)) {
+        close(data);
+      }
     };
   }
 
@@ -1912,7 +1915,7 @@ Webflow.define('navbar', function ($, _) {
     resize(0, data.el[0]);
 
     // Listen for tap outside events
-    if (!designer) $doc.on('tap' + namespace, data.outside);
+    if (!designer) $doc.on('click' + namespace, data.outside);
 
     // Update menu height for Over state
     if (animOver) {
@@ -1956,7 +1959,7 @@ Webflow.define('navbar', function ($, _) {
     var animation = config.animation;
 
     // Stop listening for tap outside events
-    $doc.off('tap' + namespace, data.outside);
+    $doc.off('click' + namespace, data.outside);
 
     if (immediate) {
       tram(data.menu).stop();
