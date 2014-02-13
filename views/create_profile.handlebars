@@ -9,8 +9,6 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/webflow.css">
   <link rel="stylesheet" type="text/css" href="css/job-hunt.webflow.css">
-<!--   <link href="css/bootstrap.css" rel="stylesheet"> -->
-  <!-- <link href="css/bootstrap-theme.css" rel="stylesheet"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
     WebFont.load({
@@ -30,34 +28,34 @@
     <h2>&nbsp; &nbsp; &nbsp;Create Profile</h2>
   </div>
   <div class="w-form">
-    <form class="w-clearfix" name="email-form" data-name="Email Form" method="get" action="/create_profile_2">
+    <form class="w-clearfix" name="email-form" data-name="Email Form">
       <label class="create_labels" for="name">Name*</label>
       <input class="w-input create_text" type="text" placeholder="Enter your name" name="name" data-name="Name"></input>
       <label class="create_labels" for="email">Email Address*</label>
       <input class="w-input create_text" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required"></input>
       <label class="create_labels">Password*</label>
-      <input class="w-input create_text" type="text" name="password" required="required"></input>
+      <input class="w-input create_text" type="text" name="field" required="required"></input>
       <label class="create_labels">Confirm Password*</label>
-      <input class="w-input create_text" type="text" name="password2" required="required"></input>
+      <input class="w-input create_text" type="text" name="field" required="required"></input>
       <label class="create_labels">Phone Number</label>
-      <input class="w-input create_text" type="text" placeholder="(555) 555 - 5555" name="phone" required="required"></input>
+      <input class="w-input create_text" type="text" placeholder="(555) 555 - 5555" name="field" required="required"></input>
       <label class="create_labels">Address</label>
-      <input class="w-input create_text" type="text" placeholder="Street" name="street" required="required"></input>
-      <select class="w-select dropdown_state" name="state" data-name="California" required="required">
+      <input class="w-input create_text" type="text" placeholder="Street" name="field" required="required"></input>
+      <select class="w-select dropdown_state" name="california" data-name="California" required="required">
         <option value="California">California</option>
         <option value="First">First Choice</option>
         <option value="Second">Second Choice</option>
         <option value="Third">Third Choice</option>
       </select>
-      <input class="w-input dropdown_state" type="text" placeholder="Zip Code" name="zip" required="required"></input>
+      <input class="w-input dropdown_state" type="text" placeholder="Zip Code" name="field" required="required"></input>
       <label class="create_labels">Max Distance Willing to Commute</label>
-      <select class="w-select create_text" name="commute_dist" required="required">
+      <select class="w-select create_text" name="dropdown" required="required">
         <option value="1-10">1-10 miles</option>
         <option value="11-20">11-20 miles</option>
         <option value="21-30">21-30 miles</option>
       </select>
       <label class="create_labels">Max Distance Willing to Relocate</label>
-      <select class="w-select create_text" name="relocate_dist">
+      <select class="w-select create_text" name="dropdown">
         <option value="0">Not at all</option>
         <option value="50">50 miles</option>
         <option value="100+">Another city</option>
@@ -65,7 +63,6 @@
       </select>
       <div class="create_aster"><strong>* indicates required field</strong>
       </div><a class="button create_button" href="#">Link Your LinkedIn Account</a>
-      <input type="submit" id="submitBtn" class="btn btn-default" value="Submit Data"></input>
     </form>
     <div class="w-form-done">
       <p>Thank you! Your submission has been received!</p>
