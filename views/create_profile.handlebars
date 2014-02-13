@@ -28,34 +28,34 @@
     <h2>&nbsp; &nbsp; &nbsp;Create Profile</h2>
   </div>
   <div class="w-form">
-    <form class="w-clearfix" name="email-form" data-name="Email Form" data-redirect="/create-profile-ii" method="get">
+    <form class="w-clearfix" name="email-form" data-name="Email Form" action="/create_profile_ii" method="get">
       <label class="create_labels" for="name">Name*</label>
       <input class="w-input create_text" type="text" placeholder="Enter your name" name="name" data-name="Name"></input>
       <label class="create_labels" for="email">Email Address*</label>
       <input class="w-input create_text" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required"></input>
       <label class="create_labels">Password*</label>
-      <input class="w-input create_text" type="text" name="field" required="required"></input>
+      <input class="w-input create_text" type="text" name="password" required="required"></input>
       <label class="create_labels">Confirm Password*</label>
-      <input class="w-input create_text" type="text" name="field" required="required"></input>
+      <input class="w-input create_text" type="text" name="conpassword" required="required"></input>
       <label class="create_labels">Phone Number</label>
-      <input class="w-input create_text" type="text" placeholder="(555) 555 - 5555" name="field" required="required"></input>
+      <input class="w-input create_text" type="text" placeholder="(555) 555 - 5555" name="field" required="phone"></input>
       <label class="create_labels">Address</label>
-      <input class="w-input create_text" type="text" placeholder="Street" name="field" required="required"></input>
-      <select class="w-select dropdown_state" name="california" data-name="California" required="required">
+      <input class="w-input create_text" type="text" placeholder="Street" name="street" required="required"></input>
+      <select class="w-select dropdown_state" name="state" data-name="California" required="required">
         <option value="California">California</option>
         <option value="First">First Choice</option>
         <option value="Second">Second Choice</option>
         <option value="Third">Third Choice</option>
       </select>
-      <input class="w-input dropdown_state" type="text" placeholder="Zip Code" name="field" required="required"></input>
+      <input class="w-input dropdown_state" type="text" placeholder="Zip Code" name="zip" required="required"></input>
       <label class="create_labels">Max Distance Willing to Commute</label>
-      <select class="w-select create_text" name="dropdown" required="required">
+      <select class="w-select create_text" name="commute_dis" required="required">
         <option value="1-10">1-10 miles</option>
         <option value="11-20">11-20 miles</option>
         <option value="21-30">21-30 miles</option>
       </select>
       <label class="create_labels">Max Distance Willing to Relocate</label>
-      <select class="w-select create_text" name="dropdown">
+      <select class="w-select create_text" name="relocate_dist">
         <option value="0">Not at all</option>
         <option value="50">50 miles</option>
         <option value="100+">Another city</option>
