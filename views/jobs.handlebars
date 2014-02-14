@@ -6,9 +6,9 @@
   <meta charset="utf-8">
   <title>Job Hunt - Jobs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/job-hunt.webflow.css">
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="/css/job-hunt.webflow.css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
     WebFont.load({
@@ -27,10 +27,14 @@
   <div>
     <div class="w-nav" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
       <div class="w-container">
-        <a class="w-nav-brand" href="/home">
-          <img src="images/home_icon.png" width="50" alt="52f3e7855d8eed2b6b0013e3_home_icon.png">
+        <a class="w-nav-brand" href="/home/{{user}}">
+          <img src="/images/home_icon.png" width="50" alt="52f3e7855d8eed2b6b0013e3_home_icon.png">
         </a>
-        <nav class="w-nav-menu" role="navigation"><a class="w-nav-link" href="/home">Home</a><a class="w-nav-link" href="/profile">Profile</a><a class="w-nav-link" href="/jobs">Browse Jobs</a>
+        <nav class="w-nav-menu" role="navigation">
+          <a class="w-nav-link" href="/home/{{user}}">Home</a>
+          <a class="w-nav-link" href="/profile/{{user}}">Profile</a>
+          <a class="w-nav-link" href="/jobs/{{user}}">Browse Jobs</a>
+          <a class="w-nav-link" href="/">Logout</a>
         </nav>
         <div class="w-nav-button">
           <div class="w-icon-nav-menu"></div>
@@ -53,6 +57,6 @@
   </div>
   {{/each}}
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="js/webflow.js"></script>
+  <script type="text/javascript" src="/js/webflow.js"></script>
 </body>
 </html>

@@ -60,6 +60,8 @@ app.get('/employer_create_ii', employer_create.page2);
 app.get('/employer_profile/:user', employer_profile.view);
 app.get('/employer_home/:user', employer_home.view);
 app.get('/jobs', jobs.view);
+
+
 // app.get('/home', home.view);
 app.get('/create_profile_ii', create_profile.hunter_page2);
 
