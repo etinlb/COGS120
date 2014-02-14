@@ -58,7 +58,7 @@ app.get('/employer_create', employer_create.page1);
 app.get('/employer_create_ii', employer_create.page2);
 app.get('/employer_profile', employer_profile.view);
 app.get('/employer_home', employer_home.view);
-app.get('/jobs', jobs.view);
+app.get('/jobs/:user', jobs.view);
 // app.get('/home', home.view);
 app.get('/create_profile_ii', create_profile.hunter_page2);
 
