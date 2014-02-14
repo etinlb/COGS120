@@ -3,27 +3,39 @@
   "jobs": [
     { "title": "Senior Analyst",
       "where": "Lehman Brothers",
-      "email": "email@snailmail.com"
+      "email": "email@snailmail.com",
+      "description":"Get off my lawn! Have you always been puzzled by the infatuation of geriatrics and their lawn? Then you are exactly the type of person we at Lehman brothers are looking for in our senior Analyst position!",
+      "id":"1"
     },
     { "title": "Junior Analyst",
       "where": "Manlee Brothers", 
-      "email": "I@Mdu.mb"
+      "email": "I@Mdu.mb",
+      "description":"I couldn't think of a clever description so lets say...you will be like the Senior Analyst just shorter",
+      "id":"2"
     },
     { "title": "Master of Coin",
       "where": "Lanister Incorporated",
-      "email": "you@reh.tt"
+      "email": "you@reh.tt",
+      "description":"Money money money money money...MO NEY. That's right if you want to be in charge of a shitload of money come join us at Lanister Incorporated and be our master of coin. Don't worry about being good at it, we're F***ing rich so we don't give a F***.",
+      "id":"3"
     },
     { "title": "Kings Slayer",
       "where": "Lanister Incorporated",
-      "email": "m@ster.com"
+      "email": "m@ster.com",
+      "description":"Love stabbing people? Love stabbing powerful people? Of course you do! Apply now and you can stab every king you want! ",
+      "id":"4"
     },
     { "title": "Obliviator",
       "where": "Ministery of Magic",
-      "email": "b@ng.me"
+      "email": "b@ng.me",
+      "description":"Those damn muggles and their pesky curiosity. Do you take pleasure in erasing peoples memory? Come join us here at the Ministery of Magic and you can wield obliviate to your hearts desire. It doesn't even have to been muggles, just walk in and wield your wand everywhere. I obliviated my cat early, it fun and absolutely no repercussions!",
+      "id":"5"
     },
     { "title": "Death Eater",
       "where": "You Know Who",
-      "email": "gmail@yahoo.org"
+      "email": "gmail@yahoo.org",
+      "description":"Would you like to work for you know who doing you know what? Have you always want a sick magical tat that can burn on your skin. Join us in trying to defeat that four eyed freak!",
+      "id":"6"
     }
 
   ]
