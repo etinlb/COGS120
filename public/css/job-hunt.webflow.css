@@ -12,6 +12,16 @@ p {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+.emp_profile_details {
+    margin-right: 13px;
+    font-size: 14px;
+    text-align: left;
+    /*margin-left: 29px;*/
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 .button {
   display: inline-block;
   padding: 4px 15px;
@@ -51,7 +61,9 @@ body {
 }
 h1 {
   height: 55px;
-  margin: 25px auto 25px 35px;
+  margin: 25px auto 25px 35px;*/
+  /*margin-left: auto;
+  margin-right: auto;*/
   padding: 5px 10px;
   background-color: white;
   box-shadow: none;
@@ -63,7 +75,7 @@ h1 {
   font-weight: 400;
   text-align: center;
   letter-spacing: -2px;
-  text-indent: 14px;
+  /*text-indent: 14px;*/
   text-transform: none;
   text-shadow: rgba(47, 56, 47, 0.79) 6px 6px 50px;
 }
@@ -158,15 +170,19 @@ h5 {
   height: 200px;
   margin-top: 34px;
 }
-.userimage {
-  max-width: 176px;
-  margin-top: 0px;
-  margin-right: 62px;
-  padding-right: 1px;
+img.userimage {
+  /*max-width: 176px;*/
+  /*margin-top: 0px;*/
+  /*margin-right: 62px;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*padding-right: 1px;
   padding-left: 2px;
   float: right;
   border-radius: 2px;
-  line-height: 21px;
+  line-height: 21px;*/
+
 }
 .searchusers {
   position: static;
@@ -204,6 +220,8 @@ h5 {
 .login_header {
   width: 277px;
   margin: 50px -7px 16px 14px;
+  margin-left: auto;
+  margin-right: auto;
   border: 3px solid #e8dcdc;
   border-radius: 25px;
   background-color: white;

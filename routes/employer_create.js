@@ -28,15 +28,14 @@ exports.add = function(req, res){
     "company_name": temp.company_name,
     "company_site": temp.company_site,
     "skills_wanted": req.query.skills_wanted,
-    "company_traits": req.query.company_traits,
+    "company_department": req.query.company_department,
     "company_industry": req.query.company_industry,
-    "commute_dist": req.query.commute_dist,
     "min_years": req.query.min_years
   };
 
   //store it in our wizard of oz database
   console.log(new_employer);
-  dorthy["employer_profiles"][temp.email] = new_employer;
+  dorthy["employer_profiles"][temp.name] = new_employer;
   console.log(dorthy);
   res.redirect('/employer_home/' + new_employer['name']);
 }
