@@ -1,4 +1,5 @@
 exports.view = function(req, res){
+
   console.log("request is ");
   console.log(req);
   console.log("params is");
