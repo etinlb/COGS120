@@ -11,6 +11,16 @@ p {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+.emp_profile_details {
+    margin-right: 13px;
+    font-size: 14px;
+    text-align: left;
+    /*margin-left: 29px;*/
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 .button {
   display: inline-block;
   padding: 4px 15px;

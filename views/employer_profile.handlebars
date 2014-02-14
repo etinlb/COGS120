@@ -6,9 +6,9 @@
   <meta charset="utf-8">
   <title>Job Hunt - Employer_Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/job-hunt.webflow.css">
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="/css/job-hunt.webflow.css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
     WebFont.load({
@@ -27,7 +27,7 @@
   <div class="w-nav" data-collapse="all" data-animation="default" data-duration="500" data-contain="1">
     <div class="w-container">
       <a class="w-nav-brand" href="/employer_home">
-        <img class="home_image" src="images/home_icon.png" width="50" height="50" alt="52f3e7855d8eed2b6b0013e3_home_icon.png">
+        <img class="home_image" src="/images/home_icon.png" width="50" height="50" alt="52f3e7855d8eed2b6b0013e3_home_icon.png">
       </a>
       <nav class="w-nav-menu" role="navigation"><a class="w-nav-link" href="/employer_home">Home</a><a class="w-nav-link" href="/jobhunters">Browse JobHunters</a>
       </nav>
@@ -38,18 +38,26 @@
   </div>
   <div class="w-container">
     <div class="w-clearfix picture_section">
-      <img class="userimage" src="images/user_icon.jpg" height="179" alt="52f2df37593f6edf41000431_user_icon.jpg">
+      <img class="userimage" src="/images/user_icon.jpg" height="179" alt="52f2df37593f6edf41000431_user_icon.jpg">
     </div>
   </div>
   <section class="w-container heading">
-    <div class="profile_name"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Joe Shmoe</strong>
+    <div class="profile_name"><strong>{{name}}</strong>
     </div><a class="button profile_button" href="/employer_create">Edit</a>
   </section>
-  <h5>Resume</h5>
-  <h5>Company Website</h5>
-  <h5>Skills I'm looking for</h5>
-  <h5>Company Traits</h5>
+  <h5>Email:</h5>
+    <div class="emp_profile_details" >{{email}}</div>
+  <h5>Phone:</h5>
+    <div class="emp_profile_details">{{phone}}</div>
+  <h5>Skills Wanted:</h5>
+    <div class="emp_profile_details" ><p>{{skills_wanted}}</p></div> 
+  <h5>Company Traits:</h5>
+    <div class="emp_profile_details" >{{company_traits}}</div>
+  <h5>Company Website:</h5>
+    <div class="emp_profile_details" >{{company_site}}</div>
+  <h5>Company Industry:</h5>
+    <div class="emp_profile_details" >{{company_industry}}</div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="js/webflow.js"></script>
+  <script type="text/javascript" src="/js/webflow.js"></script>
 </body>
 </html>
