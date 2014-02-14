@@ -1,6 +1,11 @@
 exports.view = function(req, res){
-  var pollId = req.params.user;
-  console.log(pollId);
-  console.log("testing where is profile");
-  res.render('home');
+
+  console.log("request is ");
+  console.log(req);
+  console.log("params is");
+  console.log(req.params); 
+  var user = req.params.user;
+
+  // console.log(pollId);
+  res.render('home', {'user':user});
 }
