@@ -2,22 +2,28 @@
 {
   "jobs": [
     { "title": "Senior Analyst",
-      "where": "Lehman Brothers"
+      "where": "Lehman Brothers",
+      "email": "email@snailmail.com"
     },
     { "title": "Junior Analyst",
-      "where": "Manlee Brothers"    
+      "where": "Manlee Brothers", 
+      "email": "I@Mdu.mb"
     },
     { "title": "Master of Coin",
-      "where": "Lanister Incorporated "     
+      "where": "Lanister Incorporated",
+      "email": "you@reh.tt"
     },
     { "title": "Kings Slayer",
-      "where": "Lanister Incorporated"     
+      "where": "Lanister Incorporated",
+      "email": "m@ster.com"
     },
     { "title": "Obliviator",
-      "where": "Ministery of Magic"    
+      "where": "Ministery of Magic",
+      "email": "b@ng.me"
     },
     { "title": "Death Eater",
-      "where": "You Know Who"    
+      "where": "You Know Who",
+      "email": "gmail@yahoo.org"
     }
 
   ]
