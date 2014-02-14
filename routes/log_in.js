@@ -9,7 +9,7 @@ exports.authenticate = function(req, res){
   console.log(dorthy['profiles'][req.query.user]);
   var user_info = dorthy['profiles'][req.query.user];
   if (user_info){
-    console.log('SUCCESS MOTHER FUCKER!');
+    console.log('SUCCESS MOFO!');
     if(user_info['password'] == req.query.password){
       res.redirect('/home/' + user_info['name'] );
     }
@@ -17,7 +17,7 @@ exports.authenticate = function(req, res){
       res.redirect('/log_in');
     }
   }else{
-    console.log("SHIT BE TRIPPIN, TYPE A REAL USER!");
+    console.log("BAD, TYPE A REAL USER!");
     res.redirect('/log_in');
   }
 

@@ -158,15 +158,19 @@ h5 {
   height: 200px;
   margin-top: 34px;
 }
-.userimage {
-  max-width: 176px;
-  margin-top: 0px;
-  margin-right: 62px;
-  padding-right: 1px;
+img.userimage {
+  /*max-width: 176px;*/
+  /*margin-top: 0px;*/
+  /*margin-right: 62px;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*padding-right: 1px;
   padding-left: 2px;
   float: right;
   border-radius: 2px;
-  line-height: 21px;
+  line-height: 21px;*/
+
 }
 .searchusers {
   position: static;
