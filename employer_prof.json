@@ -1,0 +1,21 @@
+
+{
+  "employer_profiles": {    
+      "eparreir@ucsd.edu":
+      { "name": "erik",
+        "email": "eparreir@ucsd.edu",
+        "password": "12345",
+        "password2": "12345",
+        "phone": "(555)-123-1233",
+        "street": "1024 Jackson",
+        "state": "California",
+        "zip": "93635",
+        "company_name": "KatKorp",
+        "company_site": "google.com",
+        "skills_wanted": "Cat Whispherer",
+        "company_traits": "Sneaky Smart Shocute",
+        "company_industry": "Meowtech",
+        "min_years": "1-10"
+      }
+    } 
+}
