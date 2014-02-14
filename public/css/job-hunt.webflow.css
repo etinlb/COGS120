@@ -1,51 +1,15 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #333;
-  font-size: 14px;
-  line-height: 20px;
-}
-h1 {
-  display: block;
-  overflow-x: visible;
-  overflow-y: visible;
-  margin: 10px 0px;
-  float: left;
-  font-size: 38px;
-  line-height: 44px;
-  font-weight: 700;
-}
-h2 {
-  margin: 10px 0px;
-  font-size: 32px;
-  line-height: 36px;
-  font-weight: 700;
-}
-h3 {
-  margin: 10px 0px;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
-}
-h4 {
-  margin: 10px 0px;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-}
-h5 {
-  margin: 10px 0px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 700;
-}
-h6 {
-  margin: 10px 0px;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 700;
-}
+
 p {
   margin-bottom: 5px;
+}
+.profile_details {
+    margin-right: 13px;
+    font-size: 14px;
+    text-align: left;
+    /*margin-left: 29px;*/
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .button {
   display: inline-block;
@@ -108,17 +72,27 @@ h2 {
   text-align: center;
   letter-spacing: -1px;
 }
+
 h3 {
   min-width: 0px;
   margin-top: 0px;
   font-size: 31px;
   text-align: center;
 }
+h4 {
+  margin: 10px 0px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
 h5 {
-  margin-top: 37px;
+  margin-top: 30px;
   margin-right: 13px;
   margin-left: 29px;
+  font-size: 18px;
+  font-weight: 700;
 }
+
 .button {
   display: block;
   overflow-x: visible;
@@ -298,8 +272,9 @@ h5 {
   margin-top: 10px;
   padding-top: 0px;
   font-family: Oswald, sans-serif;
-  font-size: 17px;
+  font-size: 30px;
   letter-spacing: 1px;
+  text-align: center;
 }
 .dropdown_state {
   display: inline-block;
