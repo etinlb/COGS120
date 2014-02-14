@@ -6,8 +6,8 @@ exports.view = function(req, res){
 
 exports.authenticate = function(req, res){
   console.log(dorthy['profiles']);
-  console.log(dorthy['profiles'][req.query.email]);
-  var user_info = dorthy['profiles'][req.query.email];
+  console.log(dorthy['profiles'][req.query.user]);
+  var user_info = dorthy['profiles'][req.query.user];
   if (user_info){
     console.log('SUCCESS MOTHER FUCKER!');
     if(user_info['password'] == req.query.password){
