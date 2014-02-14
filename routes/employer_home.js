@@ -1,3 +1,5 @@
 exports.view = function(req, res){
-  res.render('employer_home');
+  var user = req.params.user;
+  res.render('employer_home', {'user':user});
+
 }
