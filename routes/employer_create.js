@@ -4,7 +4,7 @@ var temp;
 exports.page1 = function(req, res){
   res.render('employer_create');
   console.log("EMPLOYER SHIT HAPPEND");
-  res.render("employer_profile");
+  res.render("employer_create");
 }
 exports.page2 = function(req, res){
   console.log("EMPLOYER SHIT HAPPEND");
