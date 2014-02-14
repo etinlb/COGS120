@@ -51,7 +51,9 @@ body {
 }
 h1 {
   height: 55px;
-  margin: 25px auto 25px 35px;
+  margin: 25px auto 25px 35px;*/
+  /*margin-left: auto;
+  margin-right: auto;*/
   padding: 5px 10px;
   background-color: white;
   box-shadow: none;
@@ -63,7 +65,7 @@ h1 {
   font-weight: 400;
   text-align: center;
   letter-spacing: -2px;
-  text-indent: 14px;
+  /*text-indent: 14px;*/
   text-transform: none;
   text-shadow: rgba(47, 56, 47, 0.79) 6px 6px 50px;
 }
@@ -208,6 +210,8 @@ img.userimage {
 .login_header {
   width: 277px;
   margin: 50px -7px 16px 14px;
+  margin-left: auto;
+  margin-right: auto;
   border: 3px solid #e8dcdc;
   border-radius: 25px;
   background-color: white;
