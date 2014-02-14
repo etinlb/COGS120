@@ -59,7 +59,7 @@ app.get('/employer_create', employer_create.page1);
 app.get('/employer_create_ii', employer_create.page2);
 app.get('/employer_profile/:user', employer_profile.view);
 app.get('/employer_home/:user', employer_home.view);
-app.get('/jobs', jobs.view);
+app.get('/jobs/:user', jobs.view);
 
 
 // app.get('/home', home.view);
