@@ -30,6 +30,10 @@ p {
   text-align: center;
   text-decoration: none;
 }
+.button_signin {
+  display: inline-block;
+  padding: 140px 15px;
+}
 .mainpage {
   height: 150px;
   margin-top: 47px;
@@ -238,6 +242,7 @@ img.userimage {
   font-size: 14px;
   line-height: 30px;
   list-style-type: none;
+  width: 90%;
 }
 .login_username {
   width: 150px;
@@ -450,4 +455,9 @@ img.userimage {
   margin-top: 12px;
   font-size: 15px;
   font-weight: 700;
+}
+
+.input_label{
+  display: block;
+  text-align: center;
 }
