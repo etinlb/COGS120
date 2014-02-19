@@ -1,73 +1,43 @@
-<!DOCTYPE html>
-<!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Thu Feb 13 2014 00:55:54 GMT+0000 (UTC) -->
-<html data-wf-site="52f19a02ba63705c45000010">
-<head>
-  <meta charset="utf-8">
-  <title>Job Hunt - Create Profile II</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/job-hunt.webflow.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ["Oswald:300,400,700","Open Sans:300,400,600,700,800"]
-      }
-    });
-  </script>
-  <script>
-    if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
-  </script>
-  <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
-  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
-</head>
-<body>
-  <div class="w-nav" data-collapse="all" data-animation="default" data-duration="500" data-contain="1">
-    <div class="w-container">
-      <a class="w-nav-brand home_icon" href="/home">
-        <img class="home_image" src="images/home_icon.png" width="50" height="50" alt="52f3e7855d8eed2b6b0013e3_home_icon.png">
-      </a>
-      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link" href="/home">Home</a>
-      </nav>
-      <div class="w-nav-button">
-        <div class="w-icon-nav-menu"></div>
-      </div>
+<div class="w-nav" data-collapse="all" data-animation="default" data-duration="500" data-contain="1">
+  <div class="w-container">
+    <a class="w-nav-brand home_icon" href="/home">
+      <img class="home_image" src="images/home_icon.png" width="50" height="50" alt="52f3e7855d8eed2b6b0013e3_home_icon.png">
+    </a>
+    <nav class="w-nav-menu" role="navigation"><a class="w-nav-link" href="/home">Home</a>
+    </nav>
+    <div class="w-nav-button">
+      <div class="w-icon-nav-menu"></div>
     </div>
   </div>
-  <div class="w-form">
-    <form class="w-clearfix" name="email-form" data-name="Email Form" method="get" action="/add">
-      <label class="create_labels" for="name">Skills</label>
-      <input class="w-input create_text" type="text" placeholder="Enter skills" name="skills" data-name="Name"></input>
-      <label class="create_labels" for="email">Interests</label>
-      <input class="w-input create_text" type="text" placeholder="Enter your interests" name="interests" required="required" data-name="Interests"></input>
-      <label class="create_labels">Profession / Field</label>
-      <select class="w-select create_text" name="profession" required="required" data-name="Drop Down">
-        <option value="Art">Art/Fine Arts</option>
-        <option value="First">Information Technology</option>
-        <option value="Second">Biology</option>
-        <option value="Third">Structural Engineering</option>
-      </select>
-      <label class="create_labels">Years of Experience</label>
-      <select class="w-select create_text" name="yrs_experience">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
-      <label class="create_labels">Choose Profile Picture</label>
-      <img class="create_image" src="images/user_icon.jpg" width="112" alt="52f2df37593f6edf41000431_user_icon.jpg"><a class="button create_button" href="#">Upload Resume</a><a class="button create_button" href="/profile" target="_blank">Preview Profile</a>
-      <input class="w-button create_submit" type="submit" value="Submit" data-wait="Please wait..."></input>
-    </form>
-    <div class="w-form-done">
-      <p>Thank you! Your submission has been received!</p>
-    </div>
-    <div class="w-form-fail">
-      <p>Oops! Something went wrong while submitting the form :(</p>
-    </div>
+</div>
+<div class="w-form">
+  <form class="w-clearfix" name="email-form" data-name="Email Form" method="get" action="/add">
+    <label class="create_labels" for="name">Skills</label>
+    <input class="w-input create_text" type="text" placeholder="Enter skills" name="skills" data-name="Name"></input>
+    <label class="create_labels" for="email">Interests</label>
+    <input class="w-input create_text" type="text" placeholder="Enter your interests" name="interests" required="required" data-name="Interests"></input>
+    <label class="create_labels">Profession / Field</label>
+    <select class="w-select create_text" name="profession" required="required" data-name="Drop Down">
+      <option value="Art">Art/Fine Arts</option>
+      <option value="First">Information Technology</option>
+      <option value="Second">Biology</option>
+      <option value="Third">Structural Engineering</option>
+    </select>
+    <label class="create_labels">Years of Experience</label>
+    <select class="w-select create_text" name="yrs_experience">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <label class="create_labels">Choose Profile Picture</label>
+    <img class="create_image" src="images/user_icon.jpg" width="112" alt="52f2df37593f6edf41000431_user_icon.jpg"><a class="button create_button" href="#">Upload Resume</a><a class="button create_button" href="/profile" target="_blank">Preview Profile</a>
+    <input class="w-button create_submit" type="submit" value="Submit" data-wait="Please wait..."></input>
+  </form>
+  <div class="w-form-done">
+    <p>Thank you! Your submission has been received!</p>
   </div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="js/webflow.js"></script>
-</body>
-</html>
+  <div class="w-form-fail">
+    <p>Oops! Something went wrong while submitting the form :(</p>
+  </div>
+</div>

@@ -3,10 +3,22 @@
  * Module dependencies.
  */
 
+
+//
 var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
+
+// Create `ExpressHandlebars` instance with a default layout.
+hbs = handlebars.create({
+    defaultLayout: 'main',
+    // helpers      : helpers,
+
+    // Uses multiple partials dirs, templates in "shared/templates/" are shared
+    // with the client-side of the app (see below).
+    partialsDir: ['views/partials/'] // ,'shared/templates/']
+});
 
 //Route to the js files
 var index = require('./routes/index');
@@ -28,7 +40,8 @@ var app = express();
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', handlebars());
+app.engine('handlebars', hbs.engine);
+// app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
 app.use(express.favicon());
 app.use(express.logger('dev'));
@@ -50,7 +63,7 @@ app.get('/', index.view);
 app.get('/create_profile', create_profile.hunter_page1);
 app.get('/home/:user', home.view);
 app.get('/log_in', log_in.view);
-app.get('/authenticate', log_in.authenticate);
+// app.get('/authenticate', log_in.authenticate);
 app.get('/profile/:user', profile.view);
 app.get('/add', create_profile.add);
 app.get('/employer_add', employer_create.add);
@@ -59,8 +72,9 @@ app.get('/employer_create', employer_create.page1);
 app.get('/employer_create_ii', employer_create.page2);
 app.get('/employer_profile/:user', employer_profile.view);
 app.get('/employer_home/:user', employer_home.view);
-app.get('/jobs', jobs.view);
+app.get('/jobs/:user', jobs.view);
 
+app.post('/authenticate', log_in.authenticate);
 
 // app.get('/home', home.view);
 app.get('/create_profile_ii', create_profile.hunter_page2);

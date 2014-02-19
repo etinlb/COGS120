@@ -1,9 +1,12 @@
 var dorthy = require("../profile.json");
 var temp;
+var states = require("../states.json")
 
 exports.hunter_page1 = function(req, res){
   console.log("OTHER SHIT HAPPEND");
-  res.render("create_profile");
+  console.log(states);
+  console.log(states['states'])
+  res.render("create_profile", {"states":states['states']});
 }
 
 exports.hunter_page2 = function(req, res){
