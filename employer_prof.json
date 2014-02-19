@@ -1,8 +1,8 @@
 
 {
   "employer_profiles": {    
-      "eparreir@ucsd.edu":
-      { "name": "erik",
+      "john":
+      { "name": "john",
         "email": "eparreir@ucsd.edu",
         "password": "12345",
         "password2": "12345",
