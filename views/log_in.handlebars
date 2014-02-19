@@ -1,8 +1,14 @@
+{{#if err_msg}}
+<div class="alert alert-warning">  
+  <a class="close" data-dismiss="alert">×</a>  
+  <strong>Error! </strong>{{err_msg}}
+</div>  
+{{/if}}
 <div class="login_header">
   <h1>JobHunt</h1>
 </div>
 <div class="login_section">
-  <form role="form" method="get" action="/authenticate">
+  <form role="form" method="post" action="/authenticate">
     <div class="form-group">
       <label class="input_label" for="user">Username</label>
       <input type="text" class="form-control" id="user" name="user" required="required" placeholder="Enter Username">
