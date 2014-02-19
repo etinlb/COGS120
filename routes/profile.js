@@ -5,7 +5,7 @@ exports.view = function(req, res){
 	console.log(data['profiles'][req.params.user])
   console.log("session user is " + req.session.user);
   var user = req.params.user; 
-  $("#email").click(projectClick);
+  
 	res.render('profile' ,{'user':user,  'data':data['profiles'][req.params.user]} );
 	
 }
