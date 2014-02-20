@@ -17,7 +17,7 @@
         "company_industry": "Art/Fine Arts",
         "min_years": "1"
       },
-      "adjokic@ucsd.edu":
+      "boss andreas":
       {
         "name": "boss andreas",
         "email": "adjokic@ucsd.edu",
@@ -34,7 +34,7 @@
         "company_industry": "Meowtech",
         "min_years": "2" 
       },
-      "navunjian@ucsd.edu":
+      "boss natalie":
       {
         "name": "boss natalie",
         "email": "navunjian@ucsd.edu",
@@ -51,7 +51,7 @@
         "company_industry": "Meowtech",
         "min_years": "3" 
       },
-      "k3torres@ucsd.edu":
+      "boss kenny":
       {
         "name": "boss kenny",
         "email": "k3torres@ucsd.edu",
@@ -68,9 +68,9 @@
         "company_industry": "Arts/Fine Arts",
         "min_years": "4" 
       },
-      "tomo@ucsd.edu":
+      "tomo":
       {
-        "name": "boss tomo",
+        "name": "tomo",
         "email": "tomo@ucsd.edu",
         "password": "12345",
         "password2": "12345",
