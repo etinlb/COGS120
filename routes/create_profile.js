@@ -34,9 +34,9 @@ exports.add = function(req, res){
       "skills": req.query.skills,
       "interests": req.query.interests,
       "profession": req.query.profession,
-      "commute_dist": req.query.commute_dist,
-      "relocate_dist": req.query.relocate_dist
+      "yrs_experience": req.query.yrs_experience
   };
+
   console.log(new_person);
   //store it in our wizard of oz database
   dorthy["profiles"][temp.name] = new_person;
@@ -44,6 +44,7 @@ exports.add = function(req, res){
   // res.render("profile", new_person);
   res.redirect('/home/' + new_person['name'])
 }
+
 exports.preview = function(req, res){
   console.log(temp);
   console.log("trying to add the temp value");
@@ -60,10 +61,15 @@ exports.preview = function(req, res){
     "skills": req.query.skills,
     "interests": req.query.interests,
     "profession": req.query.profession,
-    "commute_dist": req.query.commute_dist,
-    "relocate_dist": req.query.relocate_dist
+    "yrs_experience" : req.query.yrs_experience
   };
+
   //store it in our wizard of oz database
   // dorthy["profiles"].push(new_person);
-  res.render("profile_preview", new_person);
+  dorthy["profiles"][temp.name] = new_person;
+  console.log(new_person);
+  var user = temp.name;
+  res.render("profile_preview", {'user':user, 'data': new_person });
 }
+
+

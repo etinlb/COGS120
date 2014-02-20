@@ -10,7 +10,7 @@ exports.view = function(req, res){
 	
 }
 
-function projectClick(e) { 
+function projectClick(e) {
     // prevent the page from reloading 
     log("clicked on email");
     e.preventDefault();

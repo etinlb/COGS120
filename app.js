@@ -32,6 +32,8 @@ var employer_profile = require('./routes/employer_profile');
 var employer_home = require('./routes/employer_home');
 var jobs = require('./routes/jobs');
 var jobhunter = require('./routes/jobhunter');
+var preview = require('./routes/create_profile');
+
 
 // Example route
 // var user = require('./routes/user');
@@ -75,6 +77,8 @@ app.get('/employer_profile/:user', employer_profile.view);
 app.get('/employer_home/:user', employer_home.view);
 app.get('/jobs/:user', jobs.view);
 app.get('/jobhunters/:user', jobhunter.view);
+app.get('/profile_preview', preview.preview);
+
 
 app.post('/authenticate', log_in.authenticate);
 
