@@ -26,7 +26,7 @@ exports.add = function(req, res){
     "state": temp.state,
     "zip": temp.zip,
     "company_name": temp.company_name,
-    "company_site": temp.company_site,
+    "company_site": temp.company_website,
     "skills_wanted": req.query.skills_wanted,
     "company_department": req.query.company_department,
     "company_industry": req.query.company_industry,
@@ -52,9 +52,9 @@ exports.preview = function(req, res){
     "state": temp.state,
     "zip": temp.zip,
     "company_name": temp.company_name,
-    "company_site": temp.company_site,
+    "company_site": temp.company_website,
     "skills_wanted": req.query.skills_wanted,
-    "company_traits": req.query.company_traits,
+    "company_department": req.query.company_department,
     "company_industry": req.query.company_industry,
     "min_years": req.query.min_years
   };
