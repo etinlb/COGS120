@@ -1,4 +1,4 @@
-var dorthy = require('../employer_prof.json');
+var data = require('../employer_prof.json');
 
 exports.view = function(req, res){
 	console.log("profile data :: ");
