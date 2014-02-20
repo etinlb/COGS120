@@ -1,11 +1,14 @@
 var dorthy = require("../employer_prof.json");
-
 var temp;
+var states = require("../states.json")
+
 exports.page1 = function(req, res){
-  res.render('employer_create');
   console.log("EMPLOYER SHIT HAPPEND");
-  res.render("employer_create");
+  console.log(states);
+  console.log(states['states'])
+  res.render('employer_create', {"states":states['states']});
 }
+
 exports.page2 = function(req, res){
   console.log("EMPLOYER SHIT HAPPEND");
   console.log(req.query);
@@ -25,10 +28,10 @@ exports.add = function(req, res){
     "street": temp.street,
     "state": temp.state,
     "zip": temp.zip,
-    "company_name": temp.company_name,
-    "company_site": temp.company_website,
+    "company_name": req.query.company_name,
+    "company_site": req.query.company_site,
     "skills_wanted": req.query.skills_wanted,
-    "company_department": req.query.company_department,
+    "company_departments": req.query.company_departments,
     "company_industry": req.query.company_industry,
     "min_years": req.query.min_years
   };
@@ -43,7 +46,7 @@ exports.add = function(req, res){
 exports.preview = function(req, res){
   console.log(temp);
   console.log("trying to add the temp value");
-  var new_person = {
+  var new_employer = {
     "name": temp.name,
     "email": temp.email,
     "password": temp.password,
@@ -51,14 +54,17 @@ exports.preview = function(req, res){
     "street": temp.street,
     "state": temp.state,
     "zip": temp.zip,
-    "company_name": temp.company_name,
-    "company_site": temp.company_website,
+    "company_name": req.query.company_name,
+    "company_site": req.query.company_site,
     "skills_wanted": req.query.skills_wanted,
-    "company_department": req.query.company_department,
+    "company_departments": req.query.company_departments,
     "company_industry": req.query.company_industry,
     "min_years": req.query.min_years
   };
   //store it in our wizard of oz database
   // dorthy["profiles"].push(new_person);
-  res.render("employer_preview", new_employer);
+  dorthy['employer_profiles'][temp.name] = new_employer;
+  console.log(new_employer);
+  var user = temp.name;
+  res.render("employer_preview", {'user':user, 'data': new_employer});
 }

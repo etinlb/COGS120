@@ -6,7 +6,7 @@ exports.view = function(req, res){
   console.log("session user is " + req.session.user);
   var user = req.params.user; 
   
-	res.render('profile' ,{'user':user,  'data':data['profiles'][req.params.user]} );
+	res.render('profile', {'user':user,  'data':data['profiles'][req.params.user]} );
 	
 }
 
