@@ -1,18 +1,19 @@
 {{> nav_bar_emp}}
 <div class="w-container jobs_container">
   <h3>JOBHUNTERS</h3>
-  <h5><strong>Filter</strong></h5>
+  <h5 style="margin-left:-180px"><strong>SELECT A FIELD</strong></h5>
 </div>
 <div class="clearfix">
-  <div class="btn-group col-centered" role="toolbar">
+  <div style="margin-left:50px" class="btn-group col-centered" role="toolbar">
     <button type="button" class="btn btn-primary btn-xs active" id="All">All</button>
     <button type="button" class="btn btn-primary btn-xs" id="CS">Computer Science</button>
     <button type="button" class="btn btn-primary btn-xs" id="Art">Arts/Fine Arts</button>
     <button type="button" class="btn btn-primary btn-xs" id="IT">Information Technology</button>
   </div>
 </div>
+<br></br>
 <div class="bs-example">
-  <div class="panel-group" id="accordion">
+  <div style="padding:30px" class="panel-group" id="accordion">
   {{#each jobhunters}}
     <div class="panel panel-default {{field}} jobhunter">
       <div class="panel-heading">

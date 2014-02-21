@@ -5,19 +5,19 @@
   <div class="form-group">
     <form action="/create_profile_ii" method="get">
       <label class="input_label" for="name">Name*</label>
-      <input class="form-control" type="text" placeholder="Enter your name" name="name" data-name="Name"></input>
+      <input class="form-control" required="required" type="text" placeholder="Enter your name" name="name" data-name="Name"></input>
       <label class="input_label" for="email">Email Address*</label>
-      <input class="form-control" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required"></input>
+      <input class="form-control" required="required" type="email" placeholder="Enter your email address" name="email" data-name="Email" ></input>
       <label class="input_label" >Password*</label>
-      <input class="form-control" type="password" name="password" required="required"></input>
+      <input class="form-control" required="required" type="password" name="password"></input>
       <label class="input_label">Confirm Password*</label>
-      <input class="form-control" type="password" name="password2" required="required"></input>
+      <input class="form-control" required="required" type="password" name="password2" required="required"></input>
       <label class="input_label">Phone Number</label>
       <input class="form-control" type="text" placeholder="(555) 555 - 5555" name="phone" required="required"></input>
       <label class="input_label">Address</label>
-      <input class="form-control" type="text" placeholder="Street" name="street" required="required"></input>
+      <input class="form-control" type="text" placeholder="Street" name="street" ></input>
       <input class="form-control" style="margin-top: 20px;" type="text" placeholder="Zip Code" name="zip" required="required"></input>
-      <select style="margin-top: 20px;" class="form-control" name="state" data-name="California" required="required">
+      <select style="margin-top: 20px;" class="form-control" name="state" data-name="California">
       {{#each states}}
         <option value="{{name}}">{{name}}</option>
         {{/each}}
