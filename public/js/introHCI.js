@@ -17,6 +17,8 @@ function initializePage() {
 	$("#skills").click(profileEditClicked);
 	$("#interests").click(profileEditClicked);
 	$("#resume").click(profileEditClicked);
+	$("#field").click(profileEditClicked);
+	$("#yrs_experience").click(profileEditClicked);
 }
 
 function profileEditClicked(e){
