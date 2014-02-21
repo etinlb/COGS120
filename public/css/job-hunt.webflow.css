@@ -13,6 +13,7 @@ p {
     padding-bottom: 5px;
 }
 
+
 .emp_profile_details {
     margin-right: 13px;
     font-size: 14px;
@@ -29,6 +30,8 @@ p {
   color: white;
   text-align: center;
   text-decoration: none;
+  font-size:18px;
+  font-family:Oswald;
 }
 .button_signin {
   display: inline-block;
@@ -268,6 +271,11 @@ img.userimage {
   color: black;
   text-shadow: #403434 1px 1px 50px;
 }
+
+.login_header h1 {
+    margin-right:40px;
+}
+
 .login_section {
   display: block;
   height: 300px;
