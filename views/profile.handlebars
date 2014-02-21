@@ -4,23 +4,19 @@
     <img class="userimage" src="/images/user_icon.jpg" height="179" alt="52f2df37593f6edf41000431_user_icon.jpg">
   </div>
 </div>
-<section class="w-container heading">
-  <div class="profile_name"><strong>{{data.name}}</strong>
-  </div><a class="button profile_button" href="/create_profile">Edit</a>
-</section>
+
 <h5>Email:</h5>
-  <div class="profile_details"><a id="email">{{data.email}}</a></div>
+<div class="profile_details"><a id="email">{{data.email}}</a></div>
+ 
 <h5>Phone:</h5>
-  <div class="profile_details" >{{data.phone}}</div>
+  <div class="profile_details" ><a id="phone">{{data.phone}}</a></div>
 <h5>Profession:</h5>
-  <div class="profile_details" ><p>{{data.profession}}</p></div> 
+  <div class="profile_details" ><a id="profession"><p>{{data.profession}}</p></a></div> 
 <h5>Skills:</h5>
-  <div class="profile_details" >{{data.skills}}</div>
+  <div class="profile_details" ><a id="skills">{{data.skills}}</a></div>
 <h5>Interests:</h5>
-  <div class="profile_details" >{{data.interests}}</div>
+  <div class="profile_details" ><a id="interests">{{data.interests}}</a></div>
 <h5>Resume:</h5>
-  <div class="profile_details" >Resume Link</div>
-  
-<script>
-  $("#email").click(function(){ console.log("blah blah"); });
-</script>
+  <div class="profile_details" ><a id="resume">Resume Link</a></div>
+
+<script src = "../js/introHCI.js" ></script>

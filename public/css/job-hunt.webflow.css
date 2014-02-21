@@ -204,7 +204,7 @@ img.userimage {
   margin: -48px 15px -16px;
   padding-right: 35px;
   padding-bottom: 0px;
-  padding-left: 20px;
+  padding-left: 2px;
   border: 1px solid #050505;
   border-radius: 1px;
   font-family: Arial, Helvetica, sans-serif;
@@ -213,6 +213,30 @@ img.userimage {
   text-align: left;
   letter-spacing: 1px;
 }
+.editBar {
+  position: static;
+  /*display: block;*/
+  overflow-x: visible;
+  overflow-y: visible;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  clear: none;
+}
+
+.editText {
+    width: 230px;
+    margin-right: 0px;
+    font-size: 14px;
+    text-align: left;
+    /*margin-left: 29px;*/
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .heading {
   height: 75px;
   margin-top: 0px;
