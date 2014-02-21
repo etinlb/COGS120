@@ -3,7 +3,6 @@
  * Module dependencies.
  */
 
-
 //
 var express = require('express');
 var http = require('http');
@@ -31,6 +30,10 @@ var employer_create = require('./routes/employer_create');
 var employer_profile = require('./routes/employer_profile');
 var employer_home = require('./routes/employer_home');
 var jobs = require('./routes/jobs');
+var jobhunter = require('./routes/jobhunter');
+var preview = require('./routes/create_profile');
+var employer_preview = require('./routes/employer_create');
+
 
 // Example route
 // var user = require('./routes/user');
@@ -74,7 +77,12 @@ app.get('/employer_create_ii', employer_create.page2);
 app.get('/employer_profile/:user', employer_profile.view);
 app.get('/employer_home/:user', employer_home.view);
 app.get('/jobs/:user', jobs.view);
+app.get('/jobhunters/:user', jobhunter.view);
+app.get('/profile_preview', preview.preview);
+app.get('/employer_preview', employer_create.preview);
 
+
+app.post('/post_job/:user', jobs.post);
 app.post('/authenticate', log_in.authenticate);
 
 // app.get('/home', home.view);

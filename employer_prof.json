@@ -1,8 +1,8 @@
 
 {
   "employer_profiles": {    
-      "eparreir@ucsd.edu":
-      { "name": "erik",
+      "john":
+      { "name": "john",
         "email": "eparreir@ucsd.edu",
         "password": "12345",
         "password2": "12345",
@@ -13,9 +13,77 @@
         "company_name": "KatKorp",
         "company_site": "google.com",
         "skills_wanted": "Cat Whispherer",
-        "company_traits": "Sneaky Smart Shocute",
+        "company_departments": "Sneaky Smart Shocute",
+        "company_industry": "Art/Fine Arts",
+        "min_years": "1"
+      },
+      "boss andreas":
+      {
+        "name": "boss andreas",
+        "email": "adjokic@ucsd.edu",
+        "password": "12345",
+        "password2": "12345",
+        "phone": "(909)-123-4567",
+        "street": "423 Sunnyside",
+        "state": "California",
+        "zip": "92373",
+        "company_name": "Dream and Cloud Catchers",
+        "company_site": "aspirationoppressor.com",
+        "skills_wanted": "Tyrant",
+        "company_departments": "HR Rep",
         "company_industry": "Meowtech",
-        "min_years": "1-10"
+        "min_years": "2" 
+      },
+      "boss natalie":
+      {
+        "name": "boss natalie",
+        "email": "navunjian@ucsd.edu",
+        "password": "12345",
+        "password2": "12345",
+        "phone": "(403)-867-2592",
+        "street": "678 Loma Linda",
+        "state": "California",
+        "zip": "92373",
+        "company_name": "",
+        "company_site": "google.com",
+        "skills_wanted": "Cat Whispherer",
+        "company_departments": "Sneaky Smart Shocute",
+        "company_industry": "Meowtech",
+        "min_years": "3" 
+      },
+      "boss kenny":
+      {
+        "name": "boss kenny",
+        "email": "k3torres@ucsd.edu",
+        "password": "12345",
+        "password2": "12345",
+        "phone": "(909)-123-4567",
+        "street": "3948 Via Tranquilo",
+        "state": "California",
+        "zip": "92092",
+        "company_name": "Kenny and the Jets",
+        "company_site": "kjets.com",
+        "skills_wanted": "Drummer",
+        "company_departments": "Get buck",
+        "company_industry": "Arts/Fine Arts",
+        "min_years": "4" 
+      },
+      "tomo":
+      {
+        "name": "tomo",
+        "email": "tomo@ucsd.edu",
+        "password": "12345",
+        "password2": "12345",
+        "phone": "(909)-411-5232",
+        "street": "875 Genessee",
+        "state": "California",
+        "zip": "92092",
+        "company_name": "Yellow Fever",
+        "company_site": "yellowfever.com",
+        "skills_wanted": "Designers",
+        "company_departments": "Engineering",
+        "company_industry": "Structural Engineering",
+        "min_years": "1" 
       }
     } 
 }

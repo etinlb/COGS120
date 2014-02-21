@@ -1,55 +1,49 @@
-<!DOCTYPE html>
-<!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Thu Feb 13 2014 00:55:54 GMT+0000 (UTC) -->
-<html data-wf-site="52f19a02ba63705c45000010">
-<head>
-  <meta charset="utf-8">
-  <title>Job Hunt - JobHunters</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/job-hunt.webflow.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ["Oswald:300,400,700","Open Sans:300,400,600,700,800"]
-      }
-    });
-  </script>
-  <script>
-    if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
-  </script>
-  <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
-  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
-</head>
-<body>
-  <div>
-    <div class="w-nav" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
-      <div class="w-container">
-        <a class="w-nav-brand" href="/employer_home">
-          <img src="images/home_icon.png" width="50" alt="52f3e7855d8eed2b6b0013e3_home_icon.png">
-        </a>
-        <nav class="w-nav-menu" role="navigation"><a class="w-nav-link" href="/employer_home">Home</a><a class="w-nav-link" href="/employer_profile">Profile</a>
-        </nav>
-        <div class="w-nav-button">
-          <div class="w-icon-nav-menu"></div>
+{{> nav_bar_emp}}
+<div class="w-container jobs_container">
+  <h3>JOBHUNTERS</h3>
+  <h5><strong>Filter</strong></h5>
+</div>
+<div class="clearfix">
+  <div class="btn-group col-centered" role="toolbar">
+    <button type="button" class="btn btn-primary btn-xs active" id="All">All</button>
+    <button type="button" class="btn btn-primary btn-xs" id="CS">Computer Science</button>
+    <button type="button" class="btn btn-primary btn-xs" id="Art">Arts/Fine Arts</button>
+    <button type="button" class="btn btn-primary btn-xs" id="IT">Information Technology</button>
+  </div>
+</div>
+<div class="bs-example">
+  <div class="panel-group" id="accordion">
+  {{#each jobhunters}}
+    <div class="panel panel-default {{field}} jobhunter">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{id}}">{{name}}</a>
+        </h4>
+      </div>
+      <div id="collapse{{id}}" class="panel-collapse collapse">
+        <div class="panel-body">
+          <p>{{skills}}</p>
+          <p>{{profession}}</p>
+          <strong><a href="mailto:{{email}}?Subject=GIVE%20ME%20A%20JOB%20PLEASE%20I'M%20POOR%20" target="_blank">
+    {{email}}</a></strong>
         </div>
       </div>
     </div>
+    {{/each}}
   </div>
-  <div class="w-container jobs_container">
-    <h3>JOBHUNTERS</h3>
-  </div>
-  <div class="w-row">
-    <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
-      <div class="job_title">Senior Analyst</div>
-    </div>
-    <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
-      <div class="hunter_name"><strong>&nbsp; &nbsp; &nbsp; &nbsp;Joe</strong>&nbsp;Shmoe</div>
-    </div>
-  </div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="js/webflow.js"></script>
-</body>
-</html>
+</div>
+<script>
+$("button").click(function() {
+  //toggle buttons
+  $("button.active").button('toggle');
+  $("#"+this.id).button('toggle');
+
+  //show and hide appropriately.
+  if(this.id =="All"){
+    $( "div.jobhunter").show(200);
+  }else{
+    $( "div.jobhunter" + "." + this.id ).show(200);
+    $( "div.jobhunter").not("."+this.id).hide(200);
+  }
+});
+</script>
