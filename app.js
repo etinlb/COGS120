@@ -81,6 +81,7 @@ app.get('/profile_preview', preview.preview);
 app.get('/employer_preview', employer_create.preview);
 
 
+app.post('/post_job/:user', jobs.post);
 app.post('/authenticate', log_in.authenticate);
 
 // app.get('/home', home.view);

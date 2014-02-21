@@ -1,11 +1,21 @@
 {{> nav_bar}}
 <div class="w-container jobs_container">
   <h3>JOBS</h3>
+  <h5><strong>Filter</strong></h5>
+</div>
+<div class="container">
+<div class="clearfix">
+  <div class="btn-group col-centered" role="toolbar">
+    <button type="button" class="btn btn-primary btn-xs active" id="All">All</button>
+    <button type="button" class="btn btn-primary btn-xs" id="CS">Computer Science</button>
+    <button type="button" class="btn btn-primary btn-xs" id="Art">Arts/Fine Arts</button>
+    <button type="button" class="btn btn-primary btn-xs" id="IT">Information Technology</button>
+  </div>
 </div>
 <div class="bs-example">
   <div class="panel-group" id="accordion">
   {{#each jobs}}
-    <div class="panel panel-default">
+    <div class="panel panel-default {{category}} job">
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{id}}">{{title}}</a>
@@ -14,7 +24,8 @@
       <div id="collapse{{id}}" class="panel-collapse collapse">
         <div class="panel-body">
           <p>{{description}}</p>
-          <strong><a href="mailto:{{email}}?Subject=GIVE%20ME%20A%20JOB%20PLEASE%20I'M%20POOR%20" target="_blank">
+          <strong><a href="
+          mailto:{{email}}?Subject=GIVE%20ME%20A%20JOB%20PLEASE%20I'M%20POOR%20" target="_blank">
     {{where}}</a></strong>
         </div>
       </div>
@@ -22,3 +33,23 @@
     {{/each}}
   </div>
 </div>
+</div>
+<script>
+$("button").click(function() {
+  // var all_jobs = $( ".job").val();
+  //toggle button
+  $("button.active").button('toggle');
+  $("#"+this.id).button('toggle');
+  var all_jobs = $( "div.job").val();
+  console.log(all_jobs);
+  // console.log(all_jobs[0]);
+
+  if(this.id =="All"){
+    $( "div.job").show(200);
+  }else{
+    // $( "div.job").hide();
+    $( "div.job" + "." + this.id ).show(200);
+    $( "div.job").not("."+this.id).hide(200);
+  }
+});
+</script>

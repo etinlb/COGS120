@@ -1,11 +1,20 @@
 {{> nav_bar_emp}}
 <div class="w-container jobs_container">
-  <h3>JOBS</h3>
+  <h3>JOBHUNTERS</h3>
+  <h5><strong>Filter</strong></h5>
+</div>
+<div class="clearfix">
+  <div class="btn-group col-centered" role="toolbar">
+    <button type="button" class="btn btn-primary btn-xs active" id="All">All</button>
+    <button type="button" class="btn btn-primary btn-xs" id="CS">Computer Science</button>
+    <button type="button" class="btn btn-primary btn-xs" id="Art">Arts/Fine Arts</button>
+    <button type="button" class="btn btn-primary btn-xs" id="IT">Information Technology</button>
+  </div>
 </div>
 <div class="bs-example">
   <div class="panel-group" id="accordion">
   {{#each jobhunters}}
-    <div class="panel panel-default">
+    <div class="panel panel-default {{field}} jobhunter">
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{id}}">{{name}}</a>
@@ -23,3 +32,18 @@
     {{/each}}
   </div>
 </div>
+<script>
+$("button").click(function() {
+  //toggle buttons
+  $("button.active").button('toggle');
+  $("#"+this.id).button('toggle');
+
+  //show and hide appropriately.
+  if(this.id =="All"){
+    $( "div.jobhunter").show(200);
+  }else{
+    $( "div.jobhunter" + "." + this.id ).show(200);
+    $( "div.jobhunter").not("."+this.id).hide(200);
+  }
+});
+</script>
