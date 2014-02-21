@@ -68,7 +68,8 @@ app.get('/home/:user', home.view);
 app.get('/log_in', log_in.view);
 // app.get('/authenticate', log_in.authenticate);
 app.get('/profile/:user', profile.view);
-app.get('/profile/:user', profile.edit);
+app.post('/profile/bullshit', profile.edit);
+
 app.get('/add', create_profile.add);
 app.get('/employer_add', employer_create.add);
 app.get('/choose_profile', choose_profile.view);
