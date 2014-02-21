@@ -26,6 +26,7 @@ exports.edit = function(req, res)
 	{
 		console.log("key = " + name + " val = " + set[name]);
 		console.log(data['profiles'][user][name]);	
+		if ( set[name].length > 0 )
 		data['profiles'][user][name] = set[name];
 	}
 	//data['profiles'][user][]
