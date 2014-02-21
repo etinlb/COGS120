@@ -11,22 +11,17 @@
     <label class="create_labels">Password*</label>
     <input class="w-input create_text" type="password" name="password" required="required"></input>
     <label class="create_labels">Confirm Password*</label>
-    <input class="w-input create_text" type="password" name="conpassword" required="required"></input>
+    <input class="w-input create_text" type="password" name="password2" required="required"></input>
     <label class="create_labels">Phone Number</label>
     <input class="w-input create_text" type="text" placeholder="(555) 555 - 5555" name="phone" required="required"></input>
     <label class="create_labels">Address</label>
-    <input class="w-input create_text" type="text" placeholder="Street" name="street" required="required"></input>
-    <select class="w-select dropdown_state" name="state" data-name="California" required="required">
-      <option value="California">California</option>
-      <option value="First">First Choice</option>
-      <option value="Second">Second Choice</option>
-      <option value="Third">Third Choice</option>
-    </select>
-    <input class="w-input dropdown_state" type="text" placeholder="Zip Code" name="zip" required="required"></input>
-    <label class="create_labels">Company Name</label>
-    <input class="w-input create_text" type="text" required="required" name="company_name" data-name="Company Name"></input>
-    <label class="create_labels">Company Website</label>
-    <input class="w-input create_text" type="text" name="company_website" required="required" data-name="Company Website"></input>
+    <input class="form-control" type="text" placeholder="Street" name="street" required="required"></input>
+      <input class="form-control" style="margin-top: 20px;" type="text" placeholder="Zip Code" name="zip" required="required"></input>
+      <select style="margin-top: 20px;" class="form-control" name="state" data-name="California" required="required">
+      {{#each states}}
+        <option value="{{name}}">{{name}}</option>
+        {{/each}}
+      </select>
     <div class="create_aster"><strong>* indicates required field</strong>
     </div><a class="button create_button" href="#">Link Your LinkedIn Account</a>
     <input class="w-button create_submit" type="submit" value="NEXT" data-wait="Please wait..."></input>

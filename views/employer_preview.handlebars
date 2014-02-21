@@ -1,0 +1,31 @@
+<div class="w-container">
+    <div class="w-clearfix picture_section">
+      <img class="userimage" src="/images/user_icon.jpg" height="179" alt="52f2df37593f6edf41000431_user_icon.jpg">
+    </div>
+ </div>
+
+  <section class="w-container heading">
+    <div class="profile_name"><strong>{{data.name}}</strong>
+    </div>
+  <form method="post">
+  <input type="button" class ="button profile_button" value="CLOSE"
+  onclick="window.close()">
+  </form>
+  </section>
+
+  <h5>Contact Email:</h5>
+    <div class="emp_profile_details" >{{data.email}}</div>
+  <h5>Contact Phone:</h5>
+    <div class="emp_profile_details">{{data.phone}}</div>
+  <h5>Company Name:</h5>
+    <div class="emp_profile_details" ><p>{{data.company_name}}</p></div> 
+  <h5>Company Website:</h5>
+    <div class="emp_profile_details" ><p>{{data.company_site}}</p></div> 
+  <h5>Skills We're Looking For:</h5>
+    <div class="emp_profile_details" ><p>{{data.skills_wanted}}</p></div> 
+  <h5>Company Department:</h5>
+    <div class="emp_profile_details" >{{data.company_departments}}</div>
+  <h5>Company Industry:</h5>
+    <div class="emp_profile_details" >{{data.company_industry}}</div>
+  <h5>Minimum Years of Experience Required:</h5>
+    <div class="emp_profile_details" >{{data.min_years}}</div>
