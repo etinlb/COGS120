@@ -76,6 +76,7 @@ app.get('/choose_profile', choose_profile.view);
 app.get('/employer_create', employer_create.page1);
 app.get('/employer_create_ii', employer_create.page2);
 app.get('/employer_profile/:user', employer_profile.view);
+app.post('/employer_profile/bullshit', employer_profile.edit);
 app.get('/employer_home/:user', employer_home.view);
 app.get('/jobs/:user', jobs.view);
 app.get('/jobhunters/:user', jobhunter.view);
