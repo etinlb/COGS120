@@ -1,49 +1,48 @@
 {{> nav_bar_emp}}
-<div class="w-form">
-  <form class="w-clearfix" name="email-form" data-name="Email Form" method="get" action="/employer_add">
-  
-     <label class="create_labels">Company Name</label>
-    <input id="company_name" class="w-input create_text" type="text" placeholder="Enter Company Name" name="company_name" data-name="Company Name"></input>
+<div class="container">
+  <div class="form-group">
+  <form  method="get" action="/employer_add">
+     <label class="input_label">Company Name</label>
+    <input id="company_name" class="form-control" type="text" placeholder="Enter Company Name" name="company_name" data-name="Company Name"></input>
 
-     <label class="create_labels">Company Website</label>
-    <input id="company_site" class="w-input create_text" type="text" placeholder="Enter Company Website" name="company_site" data-name="Company Website"></input>
+     <label class="input_label">Company Website</label>
+    <input id="company_site" class="form-control" type="text" placeholder="Enter Company Website" name="company_site" data-name="Company Website"></input>
 
-    <label class="create_labels">Skills You're Looking For</label>
-    <input id="skills_wanted" class="w-input create_text" type="text" placeholder="Enter skills (e.g. Database admin., SQL, etc.)" name="skills_wanted" data-name="Skills Wanted"></input>
+    <label class="input_label">Skills You're Looking For</label>
+    <input id="skills_wanted" class="form-control" type="text" placeholder="Enter skills (e.g. Database admin., SQL, etc.)" name="skills_wanted" data-name="Skills Wanted"></input>
 
-    <label class="create_labels">Company Departments</label>
-    <input id="company_departments" class="w-input create_text" type="text" placeholder="Company departments (e.g. HR, Engineering)" name="company_departments" data-name="Company Departments"></input>
+    <label class="input_label">Company Departments</label>
+    <input id="company_departments" class="form-control" type="text" placeholder="Company departments (e.g. HR, Engineering)" name="company_departments" data-name="Company Departments"></input>
 
-    <label class="create_labels">Company Industry</label>
-    <select id="company_industry" class="w-select create_text" name="company_industry" data-name="Company Industry">
+    <label class="input_label">Company Industry</label>
+    <select id="company_industry" class="form-control" name="company_industry" data-name="Company Industry">
       <option value="Art">Art/Fine Arts</option>
       <option value="Information Technology">Information Technology</option>
       <option value="Biology">Biology</option>
       <option value="Structural Engineering">Structural Engineering</option>
     </select>
 
-    <label class="create_labels">Minimum Years of Experience Required</label>
-    <select id="min_years" class="w-select create_text" name="min_years">
+    <label class="input_label">Minimum Years of Experience Required</label>
+    <select id="min_years" class="form-control" name="min_years">
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
     </select>
 
-    <label class="create_labels">Choose Profile Picture</label>
+    <label class="input_label">Choose Profile Picture</label>
     <img class="create_image" src="images/user_icon.jpg" width="112" alt="52f2df37593f6edf41000431_user_icon.jpg">
     <a onclick="preview()" type="button" class="button" target="_blank"> Preview Profile </a>
 
-    <a class="button" href="#">Upload Resume</a>
     <input class="w-button create_submit" type="submit" value="Submit" data-wait="Please wait..."></input>
+    <div class="w-form-done">
+       <p>Thank you! Your submission has been received!</p>
+    </div>
+    <div class="w-form-fail">
+      <p>Oops! Something went wrong while submitting the form :(</p>
+    </div>
   </form>
 </div>
-  <div class="w-form-done">
-    <p>Thank you! Your submission has been received!</p>
-  </div>
-  <div class="w-form-fail">
-    <p>Oops! Something went wrong while submitting the form :(</p>
-  </div>
 </div>
 
 <script>
