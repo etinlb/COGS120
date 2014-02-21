@@ -80,6 +80,7 @@ app.get('/jobhunters/:user', jobhunter.view);
 app.get('/profile_preview', preview.preview);
 
 
+app.post('/post_job/:user', jobs.post);
 app.post('/authenticate', log_in.authenticate);
 
 // app.get('/home', home.view);

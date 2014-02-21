@@ -15,7 +15,9 @@
         "skills": "Fighting Children",
         "interests": "Woman but I'm taken",
         "profession": "Senior Chancellor of Micro Gravity Moonshoe development",
-        "yrs_experience" : "1"
+        "yrs_experience" : "1",
+        "id": "1",
+        "field":"CS"
       },
       "andreas":
       { "name": "andreas",
@@ -31,7 +33,9 @@
         "skills": "Sleeping",
         "interests": "Doing nothing",
         "profession": "Professional Cloud Watcher",
-        "yrs_experience" : "2"
+        "yrs_experience" : "2",
+        "id": "2",
+        "field":"CS"
       },
       "natalie":
       { "name": "natalie",
@@ -47,7 +51,9 @@
         "skills": "Not sleeping",
         "interests": "Flying kites",
         "profession": "Herbology Professor",
-        "yrs_experience" : "3"
+        "yrs_experience" : "3",
+        "id": "3",
+        "field":"Art"
       },
       "kenny":
       { "name": "kenny",
@@ -63,7 +69,9 @@
         "skills": "Good at everything",
         "interests": "Javascripting stuff",
         "profession": "Professional Handler of Things",
-        "yrs_experience" : "4"
+        "yrs_experience" : "4",
+        "id": "4",
+        "field":"Art"
       },
       "tomo":
       { "name": "tomo",
@@ -79,7 +87,9 @@
         "skills": "Being highly opinionated",
         "interests": "Coming up with tons of good ideas",
         "profession": "Professional Implementer of Yale Ideas",
-        "yrs_experience" : "1"
+        "yrs_experience" : "1",
+        "id": "5",
+        "field":"IT"
       }
     } 
 }
