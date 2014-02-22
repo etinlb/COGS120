@@ -33,7 +33,7 @@ function initializePage() {
 
 function profileEditClicked(e){
 	//console.log(this.id);
-    var containingDetail = $(this).closest(".profile_details");
+    var containingDetail = $(this).closest("h5");
     var description = $(containingDetail).find(".row");
     var htmlForm = "<div class='row'><div class='col-xs-8'><div class='form'><form class='editBar' name='email-form' id='" + this.id + "'><input class='editText' type='text' placeholder='Change " + this.id + "' name='edit' required='required'></input></div></div><div class='col-xs-4'><button type='submit' class='btn' id='submit'>Submit</button></form></div></div>";
 
@@ -47,7 +47,7 @@ function profileEditClicked(e){
 
 function emp_profileEditClicked(e){
 	//console.log(this.id);
-    var containingDetail = $(this).closest(".emp_profile_details");
+    var containingDetail = $(this).closest("h5");
     var description = $(containingDetail).find(".row");
     var htmlForm = "<div class='row'><div class='col-xs-8'><div class='form'><form class='editBar' name='email-form' id='" + this.id + "'><input class='editText' type='text' placeholder='Change " + this.id + "' name='edit' required='required'></input></div></div><div class='col-xs-4'><button type='submit' class='btn' id='submit'>Submit</button></form></div></div>";
 
