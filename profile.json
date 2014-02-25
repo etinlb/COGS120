@@ -73,9 +73,9 @@
         "id": "4",
         "field":"Art"
       },
-      "tomo":
-      { "name": "tomo",
-        "email": "tomo@ucsd.edu",
+      "tom":
+      { "name": "tom",
+        "email": "tom@ucsd.edu",
         "password": "12345",
         "password2": "12345",
         "phone": "(877)-cas-hnow",

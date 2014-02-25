@@ -1,32 +1,32 @@
 {{> nav_bar}}
-<div class="w-form">
-  <form class="w-clearfix" name="email-form" data-name="Email Form" method="get" action="/add">
-    <label class="create_labels" >Skills</label>
-    <input id="skills" class="w-input create_text" type="text" placeholder="Enter skills" name="skills" data-name="Name"></input>
+<div class="container">
+  <div class="form-group">
+    <form action="/add" method="get">
+    <label class="input_label" >Skills</label>
+    <input id="skills" class="form-control" type="text" placeholder="Enter skills" name="skills" data-name="Name"></input>
 
-    <label class="create_labels">Interests</label>
-    <input id="interests" class="w-input create_text" type="text" placeholder="Enter your interests" name="interests" data-name="Interests"></input>
+    <label class="input_label">Interests</label>
+    <input id="interests" class="form-control" type="text" placeholder="Enter your interests" name="interests" data-name="Interests"></input>
 
-    <label class="create_labels">Profession / Field</label>
-    <select id="profession" class="w-select create_text" name="profession" data-name="Drop Down">
+    <label class="input_label">Profession / Field</label>
+    <select id="profession" class="form-control" name="profession" data-name="Drop Down">
       <option value="Art">Art/Fine Arts</option>
       <option value="Information Technology">Information Technology</option>
       <option value="Biology">Biology</option>
       <option value="Structural Engineering">Structural Engineering</option>
     </select>
 
-    <label class="create_labels">Years of Experience</label>
-    <select id="yrs_experience" class="w-select create_text" name="yrs_experience">
+    <label class="input_label">Years of Experience</label>
+    <select id="yrs_experience" class="form-control" name="yrs_experience">
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
     </select>
-    <label class="create_labels">Choose Profile Picture</label>
+    <label class="input_label">Choose Profile Picture</label>
     <img class="create_image" src="images/user_icon.jpg" width="112" alt="52f2df37593f6edf41000431_user_icon.jpg">
     <a onclick="preview()" type="button" class="button" target="_blank">Preview Profile</a>
 
-    <a class="button" href="#">Upload Resume</a>
     <input class="w-button create_submit" type="submit" value="Submit" data-wait="Please wait..."></input>
   </form>
   </div>
@@ -43,7 +43,7 @@ function preview() {
   var skills = document.getElementById('skills').value;
   var interests = document.getElementById('interests').value;
   var profession = document.getElementById('profession').value;
-  var yrs_experience = document.getElementById('yrs_exp').value;
+  var yrs_experience = document.getElementById('yrs_experience').value;
   console.log(skills);
   window.open('/profile_preview?profession=' + profession + '&skills=' + skills + 
     '&interests=' + interests + '&yrs_experience=' + yrs_experience);

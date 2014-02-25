@@ -2,35 +2,32 @@
 <div>
   <h2>&nbsp; Create Employer Profile</h2>
 </div>
-<div class="w-form">
-  <form class="w-clearfix employer_form" name="email-form" data-name="Email Form" method="get" action="/employer_create_ii">
-    <label class="create_labels" for="name">Name*</label>
-    <input class="w-input create_text" type="text" placeholder="Enter your name" name="name" data-name="Name"></input>
-    <label class="create_labels" for="email">Email Address*</label>
-    <input class="w-input create_text" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required"></input>
-    <label class="create_labels">Password*</label>
-    <input class="w-input create_text" type="password" name="password" required="required"></input>
-    <label class="create_labels">Confirm Password*</label>
-    <input class="w-input create_text" type="password" name="password2" required="required"></input>
-    <label class="create_labels">Phone Number</label>
-    <input class="w-input create_text" type="text" placeholder="(555) 555 - 5555" name="phone" required="required"></input>
-    <label class="create_labels">Address</label>
-    <input class="form-control" type="text" placeholder="Street" name="street" required="required"></input>
-      <input class="form-control" style="margin-top: 20px;" type="text" placeholder="Zip Code" name="zip" required="required"></input>
-      <select style="margin-top: 20px;" class="form-control" name="state" data-name="California" required="required">
+<div class="container">
+  <div class="form-group">
+    <form  method="get" action="/employer_create_ii">
+    <label class="input_label" for="name">Name*</label>
+    <input class="form-control" type="text" placeholder="Enter your name" name="name" data-name="Name"></input>
+    <label class="input_label" for="email">Email Address*</label>
+    <input class="form-control" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required"></input>
+    <label class="input_label">Password*</label>
+    <input class="form-control" type="password" name="password" required="required"></input>
+    <label class="input_label">Confirm Password*</label>
+    <input class="form-control" type="password" name="password2" required="required"></input>
+    <label class="input_label">Phone Number</label>
+    <input class="form-control" type="text" placeholder="(555) 555 - 5555" name="phone"></input>
+    <label class="input_label">Address</label>
+    <input class="form-control" type="text" placeholder="Street" name="street"></input>
+      <input class="form-control" style="margin-top: 20px;" type="text" placeholder="Zip Code" name="zip"></input>
+      <select style="margin-top: 20px;" class="form-control" name="state" data-name="California">
       {{#each states}}
         <option value="{{name}}">{{name}}</option>
         {{/each}}
       </select>
-    <div class="create_aster"><strong>* indicates required field</strong>
-    </div><a class="button create_button" href="#">Link Your LinkedIn Account</a>
+    <div class="create_aster"><strong>* indicates required field</strong></div>
+
+
     <input class="w-button create_submit" type="submit" value="NEXT" data-wait="Please wait..."></input>
   </form>
-  <div class="w-form-done">
-    <p>Thank you! Your submission has been received!</p>
-  </div>
-  <div class="w-form-fail">
-    <p>Oops! Something went wrong while submitting the form :(</p>
-  </div>
+</div>
 </div>
 <a class="w-inline-block image_link" href="/employer_create_ii"></a>

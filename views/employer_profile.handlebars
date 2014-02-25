@@ -1,22 +1,25 @@
 {{> nav_bar_emp}}
-<div class="w-container">
-<div class="w-clearfix picture_section">
-  <img class="userimage" src="/images/user_icon.jpg" height="179" alt="52f2df37593f6edf41000431_user_icon.jpg">
-</div>
-</div>
-<section class="w-container heading">
-  <div class="profile_name"><strong>{{data.name}}</strong>
-  </div><a class="button profile_button" href="/employer_create">Edit</a>
-</section>
-<h5>Email:</h5>
-  <div class="emp_profile_details" >{{data.email}}</div>
-<h5>Phone:</h5>
-  <div class="emp_profile_details">{{data.phone}}</div>
-<h5>Skills Wanted:</h5>
-  <div class="emp_profile_details" ><p>{{data.skills_wanted}}</p></div> 
-<h5>Company Department:</h5>
-  <div class="emp_profile_details" >{{data.company_department}}</div>
-<h5>Company Website:</h5>
-  <div class="emp_profile_details" >{{data.company_site}}</div>
-<h5>Company Industry:</h5>
-  <div class="emp_profile_details" >{{data.company_industry}}</div>
+  <div class="w-container">
+    <div class="w-clearfix picture_section">
+      <img class="userimage" src="/images/user_icon.jpg" height="179" alt="52f2df37593f6edf41000431_user_icon.jpg">
+    </div>
+  </div>
+
+  <h5><a id="company_name">Company Name:</a></h5>
+    <div class="emp_profile_details" >{{data.company_name}}</div> 
+  <h5><a id="company_site">Company Website:</a></h5>
+    <div class="emp_profile_details" >{{data.company_site}}</div> 
+  <h5><a id="co_email">Contact Email:</a></h5>
+    <div class="emp_profile_details" >{{data.email}}</div>
+  <h5><a id="co_phone">Contact Phone:</a></h5>
+    <div class="emp_profile_details">{{data.phone}}</div>
+  <h5><a id="skills_wanted">Skills We're Looking For:</a></h5>
+    <div class="emp_profile_details" >{{data.skills_wanted}}</div> 
+  <h5><a id="company_departments">Company Department:</a></h5>
+    <div class="emp_profile_details" >{{data.company_departments}}</div>
+  <h5><a id="company_industry">Company Industry:</a></h5>
+    <div class="emp_profile_details" >{{data.company_industry}}</div>
+  <h5><a id="min_years">Minimum Years of Experience Required:</a></h5>
+    <div class="emp_profile_details" >{{data.min_years}}</div>
+
+<script src = "../js/introHCI.js" ></script>

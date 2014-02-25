@@ -5,31 +5,23 @@ p {
 .profile_details {
     margin-right: 13px;
     font-size: 14px;
-    
-    text-align: left;
+    /*margin-left: 29px;*/
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width:200px;
+}
+
+
+.emp_profile_details {
+    margin-right: 13px;
+    font-size: 14px;
     /*margin-left: 29px;*/
     padding-left: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.emp_profile_details {
-    margin-right: 13px;
-    font-size: 14px;
-    text-align: left;
-    /*margin-left: 29px;*/
-    padding-left: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-.button {
-  display: inline-block;
-  padding: 4px 15px;
-  background-color: black;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
 .button_signin {
   display: inline-block;
   padding: 140px 15px;
@@ -117,9 +109,14 @@ h5 {
   width: 250px;
   height: 50px;
   max-width: 300px;
-  margin: 26px 15px 35px 28px;
+  /*margin: 26px 15px 35px 28px;*/
+  margin-top: 26px;
+  margin-bottom: 35px;
+  /*below margins center button*/
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 11px;
-  padding-right: 15px;
+  /*padding-right: 15px;*/  
   padding-bottom: 8px;
   border-radius: 4px;
   background-color: #469449;
@@ -134,6 +131,9 @@ h5 {
   text-transform: capitalize;
   list-style-type: disc;
   outline:none;
+  text-align: center;
+  text-decoration: none;
+  font-size:18px;
 }
 
 .button.profile_button.profile_button {
@@ -146,7 +146,7 @@ h5 {
   line-height: 21px;
   padding:5px;
   padding-bottom: 5px;
-  padding-top:5px
+  padding-top:5px;
   padding-right:10px;
   padding-left:10px;
   outline:none;
@@ -198,8 +198,10 @@ a.button:hover {
   margin-bottom: 1px;
 }
 .navsection {
-  width: 311px;
-  height: 250px;
+  /*width: 311px;
+  height: 250px;*/
+  margin-left: auto;
+  margin-right: auto;
   margin-top: -2px;
   margin-bottom: -10px;
   box-shadow: none;
@@ -238,7 +240,7 @@ img.userimage {
   margin: -48px 15px -16px;
   padding-right: 35px;
   padding-bottom: 0px;
-  padding-left: 20px;
+  padding-left: 2px;
   border: 1px solid #050505;
   border-radius: 1px;
   font-family: Arial, Helvetica, sans-serif;
@@ -247,6 +249,30 @@ img.userimage {
   text-align: left;
   letter-spacing: 1px;
 }
+.editBar {
+  position: static;
+  /*display: block;*/
+  overflow-x: visible;
+  overflow-y: visible;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  clear: none;
+}
+
+.editText {
+    width: 100px;
+    margin-right: 0px;
+    font-size: 14px;
+    text-align: left;
+    /*margin-left: 29px;*/
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .heading {
   height: 75px;
   margin-top: 0px;
@@ -268,6 +294,11 @@ img.userimage {
   color: black;
   text-shadow: #403434 1px 1px 50px;
 }
+
+.login_header h1 {
+    margin-right:40px;
+}
+
 .login_section {
   display: block;
   height: 300px;
