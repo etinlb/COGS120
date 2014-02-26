@@ -12,7 +12,7 @@
 <div class="w-clearfix userpage">
   <img class="userimage" src="/images/user_icon.jpg" width="184" height="179" alt="52f2df37593f6edf41000431_user_icon.jpg">
 </div>
-<div class="navsection"><a style="font-size:18px; text-alight:left" class="button" href="/jobhunters/{{user}}">FIND JOBHUNTERS</a><a class="button" href="/employer_profile/{{user}}">PROFILE</a>
+<div class="navsection"><a style="font-size:18px; text-alight:left" class="button" href="/jobhunters">FIND JOBHUNTERS</a><a class="button" href="/employer_profile">PROFILE</a>
   <a href="#"></a>
   <a class="button" href="#" data-toggle="modal" data-target="#myModal">POST A JOB</a>
 </div>
@@ -27,7 +27,7 @@
         <h4 class="modal-title" id="myModalLabel">Create a Posting</h4>
       </div>
       <div class="modal-body">
-        <form role="form" action="/post_job/{{user}}" method="post">
+        <form role="form" action="/post_job" method="post">
           <div class="form-group">
             <label for="title">What is the position called?</label>
             <input type="text" class="form-control" id="title" name="title" placeholder="">

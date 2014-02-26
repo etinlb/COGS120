@@ -1,12 +1,15 @@
 var data = require('../employer_prof.json');
 var user;
 exports.view = function(req, res){
+    if(!req.session.user){
+        res.redirect('/log_in');
+        res.send();
+    }
 	console.log("profile data :: ");
-	console.log(data['employer_profiles'][req.params.user])
     console.log("session user is " + req.session.user);
-    user = req.params.user; 
+    // user = req.params.user; 
   
-	res.render('employer_profile' ,{'user':user,  'data':data['employer_profiles'][req.params.user]} );
+	res.render('employer_profile' ,{'data':data['employer_profiles'][req.session.user]} );
 	
 }
 
@@ -24,6 +27,7 @@ exports.edit = function(req, res)
     console.log( "\n\n IN EDIT EMPLOYER BIOTCH \n\n");
     console.log(req.body);
     console.log(user);
+    var user = req.session.user;
 
     
     var set = req.body;
@@ -36,5 +40,5 @@ exports.edit = function(req, res)
         data['employer_profiles'][user][name] = set[name];
     }
     //data['profiles'][user][]
-    res.redirect("/employer_profile/" + user );
+    res.redirect("/employer_profile");
 }

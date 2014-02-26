@@ -41,6 +41,7 @@ exports.add = function(req, res){
   //store it in our wizard of oz database
   dorthy["profiles"][temp.name] = new_person;
   console.log(dorthy);
+  req.session.user = new_person['name'];
   // res.render("profile", new_person);
   res.redirect('/home/' + new_person['name'])
 }

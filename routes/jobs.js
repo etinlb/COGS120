@@ -11,10 +11,9 @@ exports.view = function(req, res){
 
 exports.post = function(req, res){
   console.log("to post job");
-  console.log("user is " + req.params.user)
   var post = req.body;
   //get data on employer
-  var current_user = employer_profs['employer_profiles'][req.params.user];
+  var current_user = employer_profs['employer_profiles'][req.session.user];
   console.log(current_user);
   console.log(current_user['name']);
 
@@ -41,6 +40,6 @@ exports.post = function(req, res){
   // console.log(new_job);
   dorthy['jobs'].push(new_job);
   console.log(dorthy);
-  res.redirect('/employer_home/' +req.params.user + '?post_job=1');
+  res.redirect('/employer_home/?post_job=1');
   // res.redirect("employer_home", {'user':req.params.user ,'suc_msg':'1'})
 }

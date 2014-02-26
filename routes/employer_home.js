@@ -1,5 +1,8 @@
 exports.view = function(req, res){
-  var user = req.params.user;
+  if(!req.session.user){
+    res.redirect('/log_in');
+    res.send();
+  }
   if(req.query.post_job){
     res.render('employer_home', {'user':user, suc_msg:'1'});
   }

@@ -18,7 +18,7 @@ exports.authenticate = function(req, res){
     if(user_info['password'] == post.password){
       console.log(user_info['name']);
       req.session.user = user_info['name'];
-      res.redirect('/home/' + user_info['name'] );
+      res.redirect('/home');
       res.send();
       console.log("I can go this far");
     }
@@ -37,7 +37,7 @@ exports.authenticate = function(req, res){
     if(employer_info['password'] == post.password){
       console.log(employer_info['name']);
       req.session.user = employer_info['name'];
-      res.redirect('/employer_home/' + employer_info['name'] );
+      res.redirect('/employer_home');
       res.send();
     }
     else{
@@ -51,6 +51,10 @@ exports.authenticate = function(req, res){
     res.redirect('/log_in?err=' + err_msg);
     res.send();
   }
+}
+exports.logout = function(req, res){
+  delete req.session.user;
+  res.redirect('/');
 }
 
 

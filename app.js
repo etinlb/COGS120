@@ -64,10 +64,10 @@ if ('development' == app.get('env')) {
 // URLS that we can use in our html
 app.get('/', index.view);
 app.get('/create_profile', create_profile.hunter_page1);
-app.get('/home/:user', home.view);
+app.get('/home', home.view);
 app.get('/log_in', log_in.view);
 // app.get('/authenticate', log_in.authenticate);
-app.get('/profile/:user', profile.view);
+app.get('/profile', profile.view);
 app.post('/profile/bullshit', profile.edit);
 
 app.get('/add', create_profile.add);
@@ -75,16 +75,17 @@ app.get('/employer_add', employer_create.add);
 app.get('/choose_profile', choose_profile.view);
 app.get('/employer_create', employer_create.page1);
 app.get('/employer_create_ii', employer_create.page2);
-app.get('/employer_profile/:user', employer_profile.view);
+app.get('/employer_profile', employer_profile.view);
 app.post('/employer_profile/bullshit', employer_profile.edit);
-app.get('/employer_home/:user', employer_home.view);
-app.get('/jobs/:user', jobs.view);
-app.get('/jobhunters/:user', jobhunter.view);
+app.get('/employer_home', employer_home.view);
+app.get('/jobs', jobs.view);
+app.get('/jobhunters', jobhunter.view);
 app.get('/profile_preview', preview.preview);
 app.get('/employer_preview', employer_create.preview);
+app.get('/logout', log_in.logout);
 
 
-app.post('/post_job/:user', jobs.post);
+app.post('/post_job', jobs.post);
 app.post('/authenticate', log_in.authenticate);
 
 // app.get('/home', home.view);

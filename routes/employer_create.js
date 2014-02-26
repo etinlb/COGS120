@@ -40,7 +40,8 @@ exports.add = function(req, res){
   console.log(new_employer);
   dorthy["employer_profiles"][temp.name] = new_employer;
   console.log(dorthy);
-  res.redirect('/employer_home/' + new_employer['name']);
+  req.session.user =  new_employer['name'];
+  res.redirect('/employer_home');
 }
 
 exports.preview = function(req, res){
