@@ -1,30 +1,39 @@
-<div class="w-container">
-  <div class="w-clearfix picture_section">
-    <img class="userimage" src="/images/user_icon.jpg" height="179" alt="52f2df37593f6edf41000431_user_icon.jpg">
-  </div>
-</div>
-
-<section class="w-container heading">
-  <div class="profile_name"><strong>{{data.name}}</strong></div>
-
+  <section class="w-container heading">
   <form method="post">
-  <input type="button" class ="button profile_button" value="CLOSE"
+  <input type="button" class ="close_button" value="CLOSE"
   onclick="window.close()">
   </form>
-</section>
+  </section>
 
-<h5>Email:</h5>
-  <div class="profile_details" >{{data.email}}</div>
-<h5>Phone:</h5>
-  <div class="profile_details" >{{data.phone}}</div>
-<h5>Profession:</h5>
-  <div class="profile_details" ><p>{{data.profession}}</p></div> 
-<h5>Skills:</h5>
-  <div class="profile_details" >{{data.skills}}</div>
-<h5>Interests:</h5>
-  <div class="profile_details" >{{data.interests}}</div>
-<h5>Years of Experience:</h5>
-  <div class="profile_details" >{{data.yrs_experience}}</div>
-<h5>Resume:</h5>
-  <div class="profile_details" >Resume Link</div>
+<div class="w-container">
+      <div class="picture_section">
+        <div class="profcaption">
+          <img class="userimage" src="/images/user_icon.jpg" height="179" alt="52f2df37593f6edf41000431_user_icon.jpg">
+          <h2> {{data.name}}</h2>
+          <hr></hr>
+          <h6 style="text-align:center"> {{data.profession}}</h6>
+          <h6 style="text-align:center"> {{data.city}}</h6>
+        </div>
+      </div>
+  </div>
+
+<div class="first_block">
+  <h5><a id="email">Email:</a></h5>
+    <div class="profile_details">{{data.email}}</div>
+  <h5><a id="phone">Phone:</a></h5>
+    <div class="profile_details" >{{data.phone}}</div>
+</div>
+
+<div class="sec_block">
+  <h5><a id="profession">Profession:</a></h5>
+    <div class="profile_details"><p>{{data.profession}}</p></div> 
+  <h5><a id="skills">Skills:</a></h5>
+    <div class="profile_details">{{data.skills}}</div>
+  <h5><a id="interests">Interests:</a></h5>
+    <div class="profile_details">{{data.interests}}</div>
+  <h5><a id="yrs_experience">Years of Experience:</a></h5>
+    <div class="profile_details">{{data.yrs_experience}}</div>
+  <h5><a id="resume">Resume:</a></h5>
+    <div class="profile_details">Resume Link</div>
+</div>
  

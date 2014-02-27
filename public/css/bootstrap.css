@@ -4,6 +4,7 @@
  * Licensed under http://www.apache.org/licenses/LICENSE-2.0
  */
 
+
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 
 article,
@@ -326,7 +327,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: green;
   text-decoration: underline;
 }
 
@@ -2348,9 +2349,12 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-  color: #ffffff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  color: black;
+  background-color:   #70B870;
+  border-color: gray;
+  width:150px;
+  height:40px;
+  margin-bottom:60px;
 }
 
 .btn-primary:hover,
@@ -2358,9 +2362,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: #ffffff;
-  background-color: #3276b1;
-  border-color: #285e8e;
+  background-color: white;
 }
 
 .btn-primary:active,
