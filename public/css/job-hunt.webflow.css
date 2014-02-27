@@ -2,6 +2,13 @@
 p {
   margin-bottom: 5px;
 }
+
+/*employer profile*/
+
+.profcaption {
+    float:right;
+}
+
 .profile_details {
     margin-right: 13px;
     font-size: 14px;
