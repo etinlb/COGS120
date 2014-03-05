@@ -1,4 +1,6 @@
-<!-- Google Analytics Content Experiment code -->
+<html>
+  <head>
+  <!-- Google Analytics Content Experiment code -->
 <script>function utmx_section(){}function utmx(){}(function(){var
 k='83032802-0',d=document,l=d.location,c=d.cookie;
 if(l.search.indexOf('utm_expid='+k)>0)return;
@@ -13,7 +15,20 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 </script><script>utmx('url','A/B');</script>
 <!-- End of Google Analytics Content Experiment code -->
 
-{{> nav_bar}}
+    <meta charset="utf-8">
+    <title>Job Hunt - Sign-in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/webflow.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" title="bootstrap">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.css" title="bootstrap-theme">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="/css/job-hunt.webflow.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    {{> nav_bar}}
 <div class="w-container jobs_container">
   <h3>JOBS</h3>
   <h5 style="margin-left:-100px"><strong>SELECT A FIELD</strong></h5>
@@ -89,3 +104,6 @@ $("button").click(function() {
   ga('send', 'event', 'a', 'click');
 
 </script>
+
+  </body>
+</html>

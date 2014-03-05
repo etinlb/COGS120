@@ -7,7 +7,7 @@ exports.view = function(req, res){
   var user = req.params.user;
   console.log(dorthy);
   console.log(dorthy['jobs']);
-  res.render("jobs", {'user': user, "jobs":dorthy['jobs']});
+  res.render("jobs", {layout: false, 'user': user, "jobs":dorthy['jobs']});
 }
 
 exports.viewStatic = function(req, res){
