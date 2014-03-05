@@ -1,0 +1,30 @@
+{{> nav_bar}}
+<div class="w-container jobs_container">
+  <h3>JOBS</h3>
+  <h5><strong>Filter</strong></h5>
+</div>
+<div class="container">
+<div class="clearfix">
+  <div class="btn-group col-centered" role="toolbar">
+    <button type="button" class="btn btn-primary btn-xs active" id="All">All</button>
+    <button type="button" class="btn btn-primary btn-xs" id="CS">Computer Science</button>
+    <button type="button" class="btn btn-primary btn-xs" id="Art">Arts/Fine Arts</button>
+    <button type="button" class="btn btn-primary btn-xs" id="IT">Information Technology</button>
+  </div>
+</div>
+<div class="bs-example">
+  {{#each jobs}}
+  <!-- <div class="row" id="accordion"> -->
+    <div class="col-md-4">
+      <h2>{{title}}</h2>
+      <p>{{description}}</p>
+      <strong><a href="
+          mailto:{{email}}?Subject=GIVE%20ME%20A%20JOB%20PLEASE%20I'M%20POOR%20" target="_blank">
+    {{where}}</a></strong>
+    </div>
+    {{/each}}
+  </div>
+</div>
+</div>
+<script>
+</script>

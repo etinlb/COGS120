@@ -79,6 +79,7 @@ app.get('/employer_profile', employer_profile.view);
 app.post('/employer_profile/bullshit', employer_profile.edit);
 app.get('/employer_home', employer_home.view);
 app.get('/jobs', jobs.view);
+app.get('/jobs/static', jobs.viewStatic);
 app.get('/jobhunters', jobhunter.view);
 app.get('/profile_preview', preview.preview);
 app.get('/employer_preview', employer_create.preview);

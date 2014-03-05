@@ -9,6 +9,15 @@ exports.view = function(req, res){
   res.render("jobs", {'user': user, "jobs":dorthy['jobs']});
 }
 
+exports.viewStatic = function(req, res){
+  console.log("WE ARE SEEING THE JOBS AT THE MOMENT!");
+  var user = req.params.user;
+  console.log(dorthy);
+  console.log(dorthy['jobs']);
+  res.render("jobs_grid", {'user': user, "jobs":dorthy['jobs']});
+}
+
+
 exports.post = function(req, res){
   console.log("to post job");
   var post = req.body;
