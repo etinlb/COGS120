@@ -6,6 +6,6 @@ exports.view = function(req, res){
   if(req.query.post_job){
     res.render('employer_home', {'user':user, suc_msg:'1'});
   }
-  res.render('employer_home', {'user':user});
+  res.render('employer_home', {'user':req.session.user});
 
 }

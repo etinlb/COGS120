@@ -43,7 +43,7 @@ exports.add = function(req, res){
   console.log(dorthy);
   req.session.user = new_person['name'];
   // res.render("profile", new_person);
-  res.redirect('/home/' + new_person['name'])
+  res.redirect('/home')
 }
 
 exports.preview = function(req, res){
@@ -72,5 +72,3 @@ exports.preview = function(req, res){
   var user = temp.name;
   res.render("profile_preview", {'user':user, 'data': new_person });
 }
-
-
