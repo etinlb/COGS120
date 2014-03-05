@@ -6,7 +6,15 @@ exports.view = function(req, res){
   var user = req.params.user;
   console.log(dorthy);
   console.log(dorthy['jobs']);
-  res.render("jobs", {'user': user, "jobs":dorthy['jobs']});
+  res.render("jobs", {'user': user, "jobs":dorthy['jobs'], 'little_but':false});
+}
+
+exports.view2 = function(req, res){
+  console.log("WE ARE SEEING THE JOBS2 AT THE MOMENT!");
+  var user = req.params.user;
+  console.log(dorthy);
+  console.log(dorthy['jobs']);
+  res.render("jobs", {'user': user, "jobs":dorthy['jobs'], 'little_but':true});
 }
 
 exports.post = function(req, res){
