@@ -2354,10 +2354,9 @@ fieldset[disabled] .btn-default.active {
   border-color: gray;
   width:150px;
   height:40px;
-  margin-bottom:60px;
+  margin-left: auto;
 }
 
-.btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
