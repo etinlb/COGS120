@@ -20,78 +20,68 @@ function initializePage() {
 	$("#field").click(profileEditClicked);
 	$("#yrs_experience").click(profileEditClicked);
 
-	$("#company_name").click(emp_profileEditClicked);
-	$("#company_site").click(emp_profileEditClicked);
-	$("#co_email").click(emp_profileEditClicked);
-	$("#co_phone").click(emp_profileEditClicked);
-	$("#skills_wanted").click(emp_profileEditClicked);
-	$("#company_departments").click(emp_profileEditClicked);
-	$("#company_industry").click(emp_profileEditClicked);
-	$("#min_years").click(emp_profileEditClicked);
+	$("#company_name").click(profileEditClicked);
+	$("#company_site").click(profileEditClicked);
+	$("#co_email").click(profileEditClicked);
+	$("#co_phone").click(profileEditClicked);
+	$("#skills_wanted").click(profileEditClicked);
+	$("#company_departments").click(profileEditClicked);
+	$("#company_industry").click(profileEditClicked);
+	$("#min_years").click(profileEditClicked);
+
+  $("#sub").click(changeRequest);
+  $("#sub_emp").click(emp_changeRequest);
 
 }
-
+function submit(e){
+  return;
+}
 function profileEditClicked(e){
-	//console.log(this.id);
-    var containingDetail = $(this).closest("h5");
-    var description = $(containingDetail).find(".row");
-    var htmlForm = "<div class='row'><div class='col-xs-8'><div class='form'><form class='editBar' name='email-form' id='" + this.id + "'><input class='editText' type='text' placeholder='Change " + this.id + "' name='edit' required='required'></input></div></div><div class='col-xs-4'><button type='submit' class='btn' id='submit'>Submit</button></form></div></div>";
-
-    if (description.length == 0) {
-      containingDetail.append(htmlForm);
-      	$(".editBar").submit(changeRequest);
-    }
-    else {console.log("worked");}
-
-  }
-
-function emp_profileEditClicked(e){
-	//console.log(this.id);
-    var containingDetail = $(this).closest("h5");
-    var description = $(containingDetail).find(".row");
-    var htmlForm = "<div class='row'><div class='col-xs-8'><div class='form'><form class='editBar' name='email-form' id='" + this.id + "'><input class='editText' type='text' placeholder='Change " + this.id + "' name='edit' required='required'></input></div></div><div class='col-xs-4'><button type='submit' class='btn' id='submit'>Submit</button></form></div></div>";
-
-    if (description.length == 0) {
-      containingDetail.append(htmlForm);
-      	$(".editBar").submit(emp_changeRequest);
-    }
-    else {console.log("worked");}
-
+	  console.log(this.id);
+    var disp = $("#" +this.id).text();
+    disp = disp.replace(/:/g,'');
+    console.log(disp);
+    
+    $("#item_change").html('<label class="item_change" id="'+this.id+'" >What would you like to change your '+ disp +' to?</label>');
   }
 
  function changeRequest(e, res)
  {
- 		console.log("in change request this.id = " + this.id);
+  console.log("in change request this.id = " + this.id);
+  var to_change = $(".item_change").attr('id');
+  var what_change = $("#to_change").val();
+
+  console.log("to = " + to_change);
+  console.log("what = " + what_change);
 	e.preventDefault();
- 	console.log(document.getElementsByTagName("input")[0].value);
- 	var post_json = document.getElementsByTagName("input")[0].value;
  	var json;
  	var str;
- 	switch ( this.id )
+ 	switch ( to_change )
  	{
  		case "email":
- 			json = { "email" :post_json };
+      console.log("message");
+ 			json = { "email" :what_change };
  			break;
  		case "phone": 			
- 			json = { "phone" :post_json };
+ 			json = { "phone" :what_change };
  			break;
  		case "profession":
- 			json = { "profession" :post_json };
+ 			json = { "profession" :what_change };
  			break;
  		case "skills": 			
- 			json = { "skills" :post_json };
+ 			json = { "skills" :what_change };
  			break;
   		case "interests":
- 			json = { "interests" :post_json };
+ 			json = { "interests" :what_change };
  			break;
  		case "resume": 			
- 			json = { "resume" :post_json };
+ 			json = { "resume" :what_change };
  			break;
  		case "field":
- 			json = { "field" :post_json };
+ 			json = { "field" :what_change };
  			break;
  		case "yrs_experience":
- 			json = { "yrs_experience" :post_json };
+ 			json = { "yrs_experience" :what_change };
  			break;
  	}
  			
@@ -103,35 +93,40 @@ function emp_profileEditClicked(e){
  {
  	console.log("in change request this.id = " + this.id);
 	e.preventDefault();
- 	console.log(document.getElementsByTagName("input")[0].value);
- 	var post_json = document.getElementsByTagName("input")[0].value;
+  console.log("in change request this.id = " + this.id);
+  var to_change = $(".item_change").attr('id');
+  var what_change = $("#to_change").val();
+
+  console.log("to = " + to_change);
+  console.log("what = " + what_change);
  	var json;
  	var str;
- 	switch ( this.id )
+ 	switch ( to_change )
  	{
  		case "company_name":
- 			json = { "company_name" :post_json };
+ 			json = { "company_name" :what_change };
  			break;
  		case "company_site": 			
- 			json = { "company_site" :post_json };
+ 			json = { "company_site" :what_change };
  			break;
  		case "co_email":
- 			json = { "email" :post_json };
+      console.log("message");
+ 			json = { "email" :what_change };
  			break;
  		case "co_phone": 			
- 			json = { "phone" :post_json };
+ 			json = { "phone" :what_change };
  			break;
   		case "skills_wanted":
- 			json = { "skills_wanted" :post_json };
+ 			json = { "skills_wanted" :what_change };
  			break;
  		case "company_departments": 			
- 			json = { "company_departments" :post_json };
+ 			json = { "company_departments" :what_change };
  			break;
  		case "company_industry":
- 			json = { "company_industry" :post_json };
+ 			json = { "company_industry" :what_change };
  			break;
  		case "min_years":
- 			json = { "min_years" :post_json };
+ 			json = { "min_years" :what_change };
  			break;
  	}
  			

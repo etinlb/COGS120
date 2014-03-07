@@ -11,25 +11,48 @@
       </div>
   </div>
   <div class="first_block">
-  <h5><a id="co_email">Contact Email:</a></h5>
+  <h5><a href="#" data-toggle="modal" data-target="#myModal" id="co_email">Contact Email:</a></h5>
     <div class="emp_profile_details" >{{data.email}}</div>
-  <h5><a id="co_phone">Contact Phone:</a></h5>
+  <h5><a href="#" data-toggle="modal" data-target="#myModal" id="co_phone">Contact Phone:</a></h5>
     <div class="emp_profile_details">{{data.phone}}</div>
   </div>
 
   <div class="sec_block">
-    <h5><a id="company_name">Company Name:</a></h5>
+    <h5><a href="#" data-toggle="modal" data-target="#myModal" id="company_name">Company Name:</a></h5>
       <div class="emp_profile_details" >{{data.company_name}}</div> 
-    <h5><a id="company_site">Company Website:</a></h5>
+    <h5><a href="#" data-toggle="modal" data-target="#myModal" id="company_site">Company Website:</a></h5>
       <div class="emp_profile_details" >{{data.company_site}}</div> 
-    <h5><a id="skills_wanted">Skills We're Looking For:</a></h5>
+    <h5><a href="#" data-toggle="modal" data-target="#myModal" id="skills_wanted">Skills We're Looking For:</a></h5>
       <div class="emp_profile_details" >{{data.skills_wanted}}</div> 
-    <h5><a id="company_departments">Company Department:</a></h5>
+    <h5><a href="#" data-toggle="modal" data-target="#myModal" id="company_departments">Company Department:</a></h5>
       <div class="emp_profile_details" >{{data.company_departments}}</div>
-    <h5><a id="company_industry">Company Industry:</a></h5>
+    <h5><a href="#" data-toggle="modal" data-target="#myModal" id="company_industry">Company Industry:</a></h5>
       <div class="emp_profile_details">{{data.company_industry}}</div>
-    <h5><a id="min_years">Minimum Years of Experience Required:</a></h5>
+    <h5><a href="#" data-toggle="modal" data-target="#myModal" id="min_years">Minimum Years of Experience Required:</a></h5>
       <div class="emp_profile_details" >{{data.min_years}}</div>
   </div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Edit</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <label id="item_change"for="title">What would you like to change it to?</label>
+            <input type="text" class="form-control" id="to_change" placeholder="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <input type="submit" class="btn btn-primary" value="Submit" id="sub_emp"></input>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src = "../js/introHCI.js" ></script>

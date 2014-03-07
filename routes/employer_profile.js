@@ -26,7 +26,7 @@ exports.edit = function(req, res)
 
     console.log( "\n\n IN EDIT EMPLOYER BIOTCH \n\n");
     console.log(req.body);
-    console.log(user);
+    console.log(req.session.user);
     var user = req.session.user;
 
     

@@ -20,12 +20,14 @@ exports.authenticate = function(req, res){
       req.session.user = user_info['name'];
       res.redirect('/home');
       res.send();
+      return;
       console.log("I can go this far");
     }
     else{
       var err_msg = "Wrong password Mother fucker";
       res.redirect('/log_in?err=' + err_msg);
       res.send();
+      return;
     }
   }else{
     var employer_info = dorthy_emps['employer_profiles'][post.user];
@@ -39,11 +41,13 @@ exports.authenticate = function(req, res){
       req.session.user = employer_info['name'];
       res.redirect('/employer_home');
       res.send();
+      return;
     }
     else{
       var err_msg = "Wrong password Mother fucker";
       res.redirect('/log_in?err=' + err_msg);
       res.send();
+      return;
     }
   }else{
     console.log("BAD, TYPE A REAL USER!");

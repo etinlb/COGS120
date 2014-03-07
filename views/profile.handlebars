@@ -12,23 +12,45 @@
   </div>
 
 <div class="first_block">
-  <h5><a id="email">Email:</a></h5>
+  <h5><a href="#" data-toggle="modal" data-target="#myModal" id="email">Email:</a></h5>
     <div class="profile_details">{{data.email}}</div>
-  <h5><a id="phone">Phone:</a></h5>
+  <h5><a href="#" data-toggle="modal" data-target="#myModal" id="phone">Phone:</a></h5>
     <div class="profile_details" >{{data.phone}}</div>
 </div>
 
 <div class="sec_block">
-  <h5><a id="profession">Profession:</a></h5>
+  <h5><a href="#" data-toggle="modal" data-target="#myModal" id="profession">Profession:</a></h5>
     <div class="profile_details"><p>{{data.profession}}</p></div> 
-  <h5><a id="skills">Skills:</a></h5>
+  <h5><a href="#" data-toggle="modal" data-target="#myModal" id="skills">Skills:</a></h5>
     <div class="profile_details">{{data.skills}}</div>
-  <h5><a id="interests">Interests:</a></h5>
+  <h5><a href="#" data-toggle="modal" data-target="#myModal" id="interests">Interests:</a></h5>
     <div class="profile_details">{{data.interests}}</div>
-  <h5><a id="yrs_experience">Years of Experience:</a></h5>
+  <h5><a href="#" data-toggle="modal" data-target="#myModal" id="yrs_experience">Years of Experience:</a></h5>
     <div class="profile_details">{{data.yrs_experience}}</div>
-  <h5><a id="resume">Resume:</a></h5>
+  <h5><a href="#" data-toggle="modal" data-target="#myModal" id="resume">Resume:</a></h5>
     <div class="profile_details">Resume Link</div>
 </div>
 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Edit</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <label id="item_change"for="title">What would you like to change it to?</label>
+            <input type="text" class="form-control" id="to_change" placeholder="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <input type="submit" class="btn btn-primary" value="Submit" id="sub"></input>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 <script src = "../js/introHCI.js" ></script>
