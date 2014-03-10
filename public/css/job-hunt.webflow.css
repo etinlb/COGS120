@@ -169,7 +169,7 @@ h5 {
   /*padding-right: 15px;*/  
   padding-bottom: 8px;
   border-radius: 4px;
-  background-color: #a0d487;
+  background-color: #45b549;
   box-shadow: white 0px 0px 17px 0px;
   opacity: 1;
   font-family: Oswald, sans-serif;
@@ -369,7 +369,7 @@ img.userimage {
 
 .indexbottom {
  width:100%;
- height:60%;
+ height:55%;
  background:url(../images/paper_1.png);
  background-repeat: no-repeat;
  background-size: cover;
@@ -377,7 +377,7 @@ img.userimage {
 
 .indexbody {
  width:90% auto;
- height:40%;
+ height:45%;
  background-image: url(../images/JOBHUNT.png);
  background-position: center;
  background-repeat: no-repeat;
