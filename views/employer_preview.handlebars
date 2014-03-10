@@ -1,31 +1,39 @@
 <div class="w-container">
-    <div class="w-clearfix picture_section">
-      <img class="userimage" src="/images/user_icon.jpg" height="179" alt="52f2df37593f6edf41000431_user_icon.jpg">
-    </div>
- </div>
+      <div class="picture_section">
+        <div class="profcaption">
+          <img class="userimage" src="/images/user_icon.jpg" height="179" alt="52f2df37593f6edf41000431_user_icon.jpg">
+          <h2> {{data.name}}</h2>
+          <hr></hr>
+          <h5 style="text-align:center"> {{data.company_industry}}</h5>
+          <h6 style="text-align:center"> {{data.city}}</h6>
+        </div>
+      </div>
+  </div>
 
-  <section class="w-container heading">
-    <div class="profile_name"><strong>{{data.name}}</strong>
-    </div>
   <form method="post">
   <input type="button" class ="button profile_button" value="CLOSE"
   onclick="window.close()">
   </form>
   </section>
 
-  <h5>Contact Email:</h5>
+ <div class="first_block">
+  <h5><a href="#" id="co_email">Contact Email:</a></h5>
     <div class="emp_profile_details" >{{data.email}}</div>
-  <h5>Contact Phone:</h5>
+  <h5><a href="#" id="co_phone">Contact Phone:</a></h5>
     <div class="emp_profile_details">{{data.phone}}</div>
-  <h5>Company Name:</h5>
-    <div class="emp_profile_details" ><p>{{data.company_name}}</p></div> 
-  <h5>Company Website:</h5>
-    <div class="emp_profile_details" ><p>{{data.company_site}}</p></div> 
-  <h5>Skills We're Looking For:</h5>
-    <div class="emp_profile_details" ><p>{{data.skills_wanted}}</p></div> 
-  <h5>Company Department:</h5>
-    <div class="emp_profile_details" >{{data.company_departments}}</div>
-  <h5>Company Industry:</h5>
-    <div class="emp_profile_details" >{{data.company_industry}}</div>
-  <h5>Minimum Years of Experience Required:</h5>
-    <div class="emp_profile_details" >{{data.min_years}}</div>
+  </div>
+
+  <div class="sec_block">
+    <h5><a href="#" id="company_name">Company Name:</a></h5>
+      <div class="emp_profile_details" >{{data.company_name}}</div> 
+    <h5><a href="#" id="company_site">Company Website:</a></h5>
+      <div class="emp_profile_details" >{{data.company_site}}</div> 
+    <h5><a href="#" id="skills_wanted">Skills We're Looking For:</a></h5>
+      <div class="emp_profile_details" >{{data.skills_wanted}}</div> 
+    <h5><a href="#" id="company_departments">Positions Available:</a></h5>
+      <div class="emp_profile_details" >{{data.company_departments}}</div>
+    <h5><a href="#" id="company_industry">Company Industry:</a></h5>
+      <div class="emp_profile_details">{{data.company_industry}}</div>
+    <h5><a href="#" id="min_years">Minimum Years of Experience Required:</a></h5>
+      <div class="emp_profile_details" >{{data.min_years}}</div>
+  </div>

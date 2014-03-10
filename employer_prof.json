@@ -13,7 +13,7 @@
         "company_name": "KatKorp",
         "company_site": "google.com",
         "skills_wanted": "Cat Whispherer",
-        "company_departments": "Sneaky Smart Shocute",
+        "company_departments": "Graphic Designer, Entry Level Software Engineer",
         "company_industry": "Art/Fine Arts",
         "min_years": "1"
       },
@@ -30,7 +30,7 @@
         "company_name": "Dream and Cloud Catchers",
         "company_site": "aspirationoppressor.com",
         "skills_wanted": "Tyrant",
-        "company_departments": "HR Rep",
+        "company_departments": "HR Manager",
         "company_industry": "Meowtech",
         "min_years": "2" 
       },
@@ -47,7 +47,7 @@
         "company_name": "Meowtech",
         "company_site": "google.com",
         "skills_wanted": "Cat Whispherer",
-        "company_departments": "Sneaky Smart Shocute",
+        "company_departments": "Graphic Designer, Entry Level Software Engineer",
         "company_industry": "Meowtech",
         "min_years": "3" 
       },
@@ -81,7 +81,7 @@
         "company_name": "Yellow Fever",
         "company_site": "yellowfever.com",
         "skills_wanted": "Designers",
-        "company_departments": "Engineering",
+        "company_departments": "Structural Engineer",
         "company_industry": "Structural Engineering",
         "min_years": "1" 
       }

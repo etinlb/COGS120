@@ -78,8 +78,7 @@ border-radius: 5px;
 }
 
 .btn-success {
-  background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%);
-  background-image: linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
+  background-color:#7bcf51;
   background-repeat: repeat-x;
   border-color: #3e8f3e;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
@@ -88,13 +87,13 @@ border-radius: 5px;
 
 .btn-success:hover,
 .btn-success:focus {
-  background-color: #419641;
+  background-color: #7bcf51;
   background-position: 0 -15px;
 }
 
 .btn-success:active,
 .btn-success.active {
-  background-color: #419641;
+  background-color: #7bcf51;
   border-color: #3e8f3e;
 }
 
