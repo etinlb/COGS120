@@ -79,8 +79,8 @@
 }
 
 .btn-success {
-  background-image: -webkit-linear-gradient(top, #7bcf51 0%, #7bcf51 100%);
-  background-image: linear-gradient(to bottom, #7bcf51 0%, #7bcf51 100%);
+  background-image: -webkit-linear-gradient(top, #a0d487 0%, #a0d487 100%);
+  background-image: linear-gradient(to bottom, #a0d487 0%, #a0d487 100%);
   background-repeat: repeat-x;
   border-color: #3e8f3e;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
@@ -89,13 +89,13 @@
 
 .btn-success:hover,
 .btn-success:focus {
-  background-color: #7bcf51;
+  background-color: #a0d487;
   background-position: 0 -15px;
 }
 
 .btn-success:active,
 .btn-success.active {
-  background-color: #7bcf51;
+  background-color: #a0d487;
   border-color: #3e8f3e;
 }
 

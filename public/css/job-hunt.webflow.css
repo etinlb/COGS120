@@ -18,7 +18,7 @@ p {
   height:220px;
   padding-top:2px;
   background-color: #f8fff5;
-  border:2px solid #7bcf51 ;
+  border:2px solid #a0d487 ;
   border-radius:25px;
 }
 
@@ -30,7 +30,7 @@ p {
   height:600px;
   padding-top:2px;
   background-color: #f8fff5;
-  border:2px solid #7bcf51 ;
+  border:2px solid #a0d487 ;
   border-radius:25px;
   margin-bottom:5px;
 }
@@ -43,8 +43,8 @@ p {
     margin-right:5px;
     height:230px;
     background-color: white;
-    border-top: solid 5px #7bcf51 ;
-    border-bottom: solid 5px #7bcf51 ;
+    border-top: solid 5px #a0d487 ;
+    border-bottom: solid 5px #a0d487 ;
     border-radius:25px;
 
 
@@ -169,7 +169,7 @@ h5 {
   /*padding-right: 15px;*/  
   padding-bottom: 8px;
   border-radius: 4px;
-  background-color: #7bcf51;
+  background-color: #a0d487;
   box-shadow: white 0px 0px 17px 0px;
   opacity: 1;
   font-family: Oswald, sans-serif;
@@ -187,7 +187,7 @@ h5 {
 }
 
 .close_button {
-  background-color:#278a3c;
+  background-color: #a0d487;
   color:white;
   width: 80px;
   height: 40px;
@@ -620,5 +620,5 @@ a:hover {
 }
 
 a[id]:hover {
-  color: #7bcf51;
+  color: #a0d487;
 }
