@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Muli);
+
 .pic_upload {
   position:relative;
   width:600px;
@@ -9,6 +11,10 @@ p {
   margin-bottom: 5px;
 }
 
+.clearfix {
+  margin-left:80px;
+}
+
 /*profiles*/
 .first_block {
   width: 98%;
@@ -18,7 +24,7 @@ p {
   height:220px;
   padding-top:2px;
   background-color: #f8fff5;
-  border:2px solid #a0d487 ;
+  border:2px solid #63b063 ;
   border-radius:25px;
 }
 
@@ -30,7 +36,7 @@ p {
   height:600px;
   padding-top:2px;
   background-color: #f8fff5;
-  border:2px solid #a0d487 ;
+  border:2px solid #63b063 ;
   border-radius:25px;
   margin-bottom:5px;
 }
@@ -43,8 +49,8 @@ p {
     margin-right:5px;
     height:230px;
     background-color: white;
-    border-top: solid 5px #a0d487 ;
-    border-bottom: solid 5px #a0d487 ;
+    border-top: solid 5px #63b063 ;
+    border-bottom: solid 5px #63b063 ;
     border-radius:25px;
 
 
@@ -160,8 +166,8 @@ h5 {
   height: 50px;
   max-width: 300px;
   /*margin: 26px 15px 35px 28px;*/
-  margin-top: 26px;
-  margin-bottom: 35px;
+  margin-top: 24px;
+  margin-bottom:20px;
   /*below margins center button*/
   margin-left: auto;
   margin-right: auto;
@@ -169,10 +175,10 @@ h5 {
   /*padding-right: 15px;*/  
   padding-bottom: 8px;
   border-radius: 4px;
-  background-color: #45b549;
+  background-color: #63b063;
   box-shadow: white 0px 0px 17px 0px;
   opacity: 1;
-  font-family: Oswald, sans-serif;
+  font-family: "Muli", arial;
   font-size: 21px;
   line-height: 32px;
   font-weight: 400;
@@ -187,7 +193,7 @@ h5 {
 }
 
 .close_button {
-  background-color: #a0d487;
+  background-color:#63b063;
   color:white;
   width: 80px;
   height: 40px;
@@ -254,9 +260,9 @@ a.button:hover {
   margin-top: 10px;
   margin-bottom: 20px;
   padding-top: 1px;
-  border: 1px #6abf43 black;
+  border: 1px #63b063 black;
   background-color: transparent;
-  color: #6abf43;
+  color: #63b063;
   font-size: 45px;
   font-weight: 300;
   text-align: center;
@@ -369,15 +375,15 @@ img.userimage {
 
 .indexbottom {
  width:100%;
- height:55%;
+ height:45%;
  background:url(../images/paper_1.png);
  background-repeat: no-repeat;
  background-size: cover;
 }
 
 .indexbody {
- width:90% auto;
- height:45%;
+ width:100%;
+ height:50%;
  background-image: url(../images/JOBHUNT.png);
  background-position: center;
  background-repeat: no-repeat;
@@ -602,7 +608,7 @@ img.userimage {
 .input_label{
   display: block;
   text-align: center;
-  font-family:century gothic;
+  font-family:"Muli", arial;
   font-size:15px;
   letter-spacing: 3px;
 }
@@ -620,5 +626,5 @@ a:hover {
 }
 
 a[id]:hover {
-  color: #a0d487;
+  color: #63b063;
 }

@@ -57,6 +57,7 @@ border-radius: 5px;
 .btn-default.active {
   background-color:   white;
   border-color: white;
+  color:gray;
 }
 
 .btn-primary {
@@ -73,12 +74,17 @@ border-radius: 5px;
 
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #70B870;
+  background-color: white;
+  color:gray;
   border-color: gray;
 }
 
+.btn-primary:active:hover {
+  color:black;
+}
+
 .btn-success {
-  background-color:#7bcf51;
+  background-color:#63b063;
   background-repeat: repeat-x;
   border-color: #3e8f3e;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
@@ -87,13 +93,13 @@ border-radius: 5px;
 
 .btn-success:hover,
 .btn-success:focus {
-  background-color: #7bcf51;
+  background-color: #63b063;
   background-position: 0 -15px;
 }
 
 .btn-success:active,
 .btn-success.active {
-  background-color: #7bcf51;
+  background-color: #63b063;
   border-color: #3e8f3e;
 }
 
