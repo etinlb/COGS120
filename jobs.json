@@ -11,21 +11,21 @@
     { "title": "Junior Analyst",
       "where": "Manlee Brothers", 
       "email": "I@Mdu.mb",
-      "description":"I couldn't think of a clever description so lets say...you will be like the Senior Analyst just shorter",
+      "description":"Analyze everything on a Junior scale",
       "id":"2",
       "category": "CS"
     },
-    { "title": "Master of Coin",
+    { "title": "Master of Coins",
       "where": "Lanister Incorporated",
       "email": "you@reh.tt",
-      "description":"Money money money money money...MO NEY. That's right if you want to be in charge of a shitload of money come join us at Lanister Incorporated and be our master of coin. Don't worry about being good at it, we're F***ing rich so we don't give a F***.",
+      "description":"You will have the power of coin at your hands. He who holds the coin holds the power. You will be able to control all the aspects of technology when you control the coin.",
       "id":"3",
-      "category":"Art"
+      "category":"IT"
     },
     { "title": "Kings Slayer",
       "where": "Lanister Incorporated",
       "email": "m@ster.com",
-      "description":"Love stabbing people? Love stabbing powerful people? Of course you do! Apply now and you can stab every king you want! ",
+      "description":"Love stabbing people? Love stabbing powerful people? Do you think stabbing people is art? Of course you do! Send your resume in and you can stab every king you want!",
       "id":"4",
       "category": "Art"
     },
@@ -42,6 +42,27 @@
       "description":"Would you like to work for you know who doing you know what? Have you always want a sick magical tat that can burn on your skin. Join us in trying to defeat that four eyed freak!",
       "id":"6",
       "category": "CS"
+    },
+    { "title": "Quality Engineering Intern",
+      "where": "Google",
+      "email": "gmail@yahoo.org",
+      "description":"As the QE Intern you will get hands on experience building both the application side and testing side of our platform. You will be responsible for building automated testing scripts to test all aspects of the platform.",
+      "id":"7",
+      "category": "CS"
+    },
+    { "title": "Systems Admin",
+      "where": "You Know Who Inc",
+      "email": "gmail@yahoo.org",
+      "description":"People love doing things they shouldn't do with computers. As the Systems Admin at You Know Who Inc, you will be responsible for baring those people from doing those things. Someone wants to run a rouge DNS serve on our network? It's your job to stop them by any means. Any. Means.",
+      "id":"8",
+      "category": "IT"
+    },
+    { "title": "Graphic Desing",
+      "where": "Lanister Incorporated",
+      "email": "gmail@yahoo.org",
+      "description":"We at Lanister Incorporated desire someone who is a talented graphic designer to redo our sigil. A lion is overdone and we want something with more pizazz. That is where you come in, you will be working on commission to design a snazzy sigil and you will be compensated greatly. After all, a Lanister always pays his debts. ",
+      "id":"9",
+      "category": "Art"
     }
 
   ]
